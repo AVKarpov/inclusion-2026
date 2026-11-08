@@ -73,65 +73,23 @@
                 <section class="section project-browser" id="projects" aria-labelledby="projects-title">
                     <div class="project-browser__sidebar">
                         <h2 id="projects-title">Наши проекты</h2>
-                        <div class="nav project-browser__tabs" role="tablist" aria-label="Наши проекты" aria-orientation="vertical" data-tablist>
-                            <button class="button button--secondary project-browser__tab active" type="button" role="tab" id="project-tab-bilet" data-bs-toggle="tab" data-bs-target="#project-bilet" aria-controls="project-bilet" aria-selected="true" tabindex="0">Билет в будущее</button>
-                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-masterstvo" data-bs-toggle="tab" data-bs-target="#project-masterstvo" aria-controls="project-masterstvo" aria-selected="false" tabindex="-1">Мастерство начинается здесь</button>
-                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-skills" data-bs-toggle="tab" data-bs-target="#project-skills" aria-controls="project-skills" aria-selected="false" tabindex="-1">Навыки умелых</button>
-                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-craft" data-bs-toggle="tab" data-bs-target="#project-craft" aria-controls="project-craft" aria-selected="false" tabindex="-1">Особое ремесло</button>
-                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-abilympics" data-bs-toggle="tab" data-bs-target="#project-abilympics" aria-controls="project-abilympics" aria-selected="false" tabindex="-1">Абилимпикс</button>
-                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-open-days" data-bs-toggle="tab" data-bs-target="#project-open-days" aria-controls="project-open-days" aria-selected="false" tabindex="-1">Дни открытых дверей</button>
-                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-training" data-bs-toggle="tab" data-bs-target="#project-training" aria-controls="project-training" aria-selected="false" tabindex="-1">Профессиональное обучение без границ</button>
-                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-other" data-bs-toggle="tab" data-bs-target="#project-other" aria-controls="project-other" aria-selected="false" tabindex="-1">Вопросы о проектах</button>
+                        <div class="nav project-browser__tabs" role="list" aria-label="Наши проекты">
+                            <span class="button button--secondary project-browser__tab active" role="listitem" id="project-tab-bilet">Билет в будущее</span>
+                            <span class="button button--secondary project-browser__tab" role="listitem" id="project-tab-masterstvo">Мастерство начинается здесь</span>
+                            <span class="button button--secondary project-browser__tab" role="listitem" id="project-tab-skills">Навыки умелых</span>
+                            <span class="button button--secondary project-browser__tab" role="listitem" id="project-tab-craft">Особое ремесло</span>
+                            <span class="button button--secondary project-browser__tab" role="listitem" id="project-tab-abilympics">Абилимпикс</span>
+                            <span class="button button--secondary project-browser__tab" role="listitem" id="project-tab-open-days">Дни открытых дверей</span>
+                            <span class="button button--secondary project-browser__tab" role="listitem" id="project-tab-training">Профессиональное обучение без границ</span>
+                            <span class="button button--secondary project-browser__tab" role="listitem" id="project-tab-other">Вопросы о проектах</span>
                         </div>
                     </div>
-                    <div class="tab-content project-browser__panels">
-                        <div class="tab-pane project-panel show active" id="project-bilet" role="tabpanel" aria-labelledby="project-tab-bilet" tabindex="0">
+                    <div class="project-browser__panels">
+                        <div class="project-panel active" id="project-bilet" role="region" aria-labelledby="project-tab-bilet" tabindex="0">
                             <img class="project-panel__image" src="assets/img/project-bilet.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
                             <h3>Билет в будущее</h3>
                             <p>Профориентационный проект помогает школьникам познакомиться с профессиями, пройти диагностику интересов и осознанно выбрать дальнейший профессиональный путь.</p>
-                            <a class="button button--secondary" href="https://bvbinfo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
-                        </div>
-                        <div class="tab-pane project-panel" id="project-masterstvo" role="tabpanel" aria-labelledby="project-tab-masterstvo" tabindex="0">
-                            <img class="project-panel__image" src="assets/img/project-masterstvo.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
-                            <h3>Мастерство начинается здесь</h3>
-                            <p>Городской профориентационный проект для школьников 9 классов. Помогает познакомиться с востребованными профессиями, колледжами Москвы и рынком труда столицы.</p>
-                            <a class="button button--secondary" href="https://colleges.shkolamoskva.ru/proftest" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
-                        </div>
-                        <div class="tab-pane project-panel" id="project-skills" role="tabpanel" aria-labelledby="project-tab-skills" tabindex="0">
-                            <img class="project-panel__image" src="assets/img/project-skills.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
-                            <h3>Навыки умелых</h3>
-                            <p>Конкурс профессионального мастерства для школьников и студентов колледжей с особенностями интеллектуального развития. Помогает освоить практические навыки и определиться с будущей профессией.</p>
-                            <a class="button button--secondary" href="https://skilledskills.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
-                        </div>
-                        <div class="tab-pane project-panel" id="project-craft" role="tabpanel" aria-labelledby="project-tab-craft" tabindex="0">
-                            <img class="project-panel__image" src="assets/img/project-craft.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
-                            <h3>Особое ремесло</h3>
-                            <p>Подробнее об «Особом ремесле» можно узнать на сайте проекта. По вопросам участия обратитесь к специалистам через форму обратной связи.</p>
-                            <a class="button button--secondary" href="https://osoboeremeslo.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
-                        </div>
-                        <div class="tab-pane project-panel" id="project-abilympics" role="tabpanel" aria-labelledby="project-tab-abilympics" tabindex="0">
-                            <img class="project-panel__image" src="assets/img/project-abilympics.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
-                            <h3>Абилимпикс</h3>
-                            <p>Чемпионат профессионального мастерства для людей с инвалидностью и ОВЗ. Поддерживает профессиональную ориентацию, получение образования и трудоустройство участников.</p>
-                            <a class="button button--secondary" href="https://abilympics.moscow/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
-                        </div>
-                        <div class="tab-pane project-panel" id="project-open-days" role="tabpanel" aria-labelledby="project-tab-open-days" tabindex="0">
-                            <img class="project-panel__image" src="assets/img/project-open-days.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
-                            <h3>Дни открытых дверей</h3>
-                            <p>Перейдите на сайт дней открытых дверей, чтобы выбрать мероприятие и уточнить подробности посещения.</p>
-                            <a class="button button--secondary" href="https://dod.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
-                        </div>
-                        <div class="tab-pane project-panel" id="project-training" role="tabpanel" aria-labelledby="project-tab-training" tabindex="0">
-                            <img class="project-panel__image" src="assets/img/project-training.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
-                            <h3>Профессиональное обучение без границ</h3>
-                            <p>Профессиональное обучение в мастерских и лабораториях колледжей. Программа завершается квалификационным экзаменом.</p>
-                            <a class="button button--secondary" href="https://pobg.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
-                        </div>
-                        <div class="tab-pane project-panel" id="project-other" role="tabpanel" aria-labelledby="project-tab-other" tabindex="0">
-                            <img class="project-panel__image" src="assets/img/project-other.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
-                            <h3>Не нашли нужный проект?</h3>
-                            <p>Напишите, какой проект вас интересует. Специалисты помогут сориентироваться и ответят на вопросы.</p>
-                            <a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D1%85">Задать вопрос</a>
+                            <a class="button button--secondary" href="" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
                         </div>
                     </div>
                 </section>
@@ -160,10 +118,7 @@
                                         <p class="featured-event__description">Интерактивный мастер-класс для школьников о выборе профессии и развитии навыков</p>
                                         <ul class="event-meta">
                                             <li>
-                                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
-                                                    <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
-                                                </svg>
+                                                <img alt="" src="assets/img/icon-calendar-green.svg">
                                                 <time datetime="2026-09-28">28 сентября 2026</time>
                                             </li>
                                             <li>
@@ -264,7 +219,7 @@
                                 </select>
                             </label>
                             <button class="button button--primary" type="submit">Применить фильтры</button>
-                            <a class="button button--secondary" href="https://yandex.ru/maps/?text=107143%2C%20%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B5%D1%80%D0%B1%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%20%D0%B4.%207" target="_blank" rel="noopener noreferrer">Показать на карте</a>
+                            <a class="button button--secondary button-map" href="" target="_blank" rel="noopener noreferrer">Показать на карте</a>
                         </div>
                     </form>
                     <p class="event-directory__count" role="status">Показано событий: <strong id="event-count">4</strong></p>
@@ -276,18 +231,13 @@
                             <div class="event-card__content">
                                 <h3>Инклюзивное образование: новые возможности</h3>
                                 <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
-                                <p class="event-card__type">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
-                                    </svg>
+                                <p class="event-card__type label-conf">
+                                    <img alt="" src="assets/img/icon-conf.svg">
                                     <span>Конференция</span>
                                 </p>
                                 <ul class="event-meta event-meta--inline">
                                     <li>
-                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
-                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
-                                        </svg>
+                                        <img alt="" src="assets/img/icon-calendar-green.svg">
                                         <time datetime="2026-09-28">28 сентября 2026</time>
                                     </li>
                                     <li>
@@ -306,7 +256,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button>
+                            <button class="button button--secondary event-card__action" type="button" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button>
                         </article>
                         <article class="event-card" data-event-type="conference" data-event-format="unspecified" data-event-date="2026-09">
                             <div class="event-card__visual">
@@ -315,18 +265,13 @@
                             <div class="event-card__content">
                                 <h3>Инклюзивное образование: новые возможности</h3>
                                 <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
-                                <p class="event-card__type">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
-                                    </svg>
+                                <p class="event-card__type label-conf">
+                                    <img alt="" src="assets/img/icon-conf.svg">
                                     <span>Конференция</span>
                                 </p>
                                 <ul class="event-meta event-meta--inline">
                                     <li>
-                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
-                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
-                                        </svg>
+                                        <img alt="" src="assets/img/icon-calendar-green.svg">
                                         <time datetime="2026-09-28">28 сентября 2026</time>
                                     </li>
                                     <li>
@@ -345,7 +290,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button>
+                            <button class="button button--secondary event-card__action" type="button" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button>
                         </article>
                         <article class="event-card" data-event-type="masterclass" data-event-format="unspecified" data-event-date="2026-09">
                             <div class="event-card__visual">
@@ -354,18 +299,13 @@
                             <div class="event-card__content">
                                 <h3>Инклюзивное образование: новые возможности</h3>
                                 <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
-                                <p class="event-card__type">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
-                                    </svg>
+                                <p class="event-card__type label-conf">
+                                    <img alt="" src="assets/img/icon-conf.svg">
                                     <span>Мастер-класс</span>
                                 </p>
                                 <ul class="event-meta event-meta--inline">
                                     <li>
-                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
-                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
-                                        </svg>
+                                        <img alt="" src="assets/img/icon-calendar-green.svg">
                                         <time datetime="2026-09-28">28 сентября 2026</time>
                                     </li>
                                     <li>
@@ -384,7 +324,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button>
+                            <button class="button button--secondary event-card__action" type="button" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button>
                         </article>
                         <article class="event-card" data-event-type="masterclass" data-event-format="unspecified" data-event-date="2026-09">
                             <div class="event-card__visual">
@@ -393,18 +333,13 @@
                             <div class="event-card__content">
                                 <h3>Инклюзивное образование: новые возможности</h3>
                                 <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
-                                <p class="event-card__type">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
-                                    </svg>
+                                <p class="event-card__type label-conf">
+                                    <img alt="" src="assets/img/icon-conf.svg">
                                     <span>Мастер-класс</span>
                                 </p>
                                 <ul class="event-meta event-meta--inline">
                                     <li>
-                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
-                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
-                                        </svg>
+                                        <img alt="" src="assets/img/icon-calendar-green.svg">
                                         <time datetime="2026-09-28">28 сентября 2026</time>
                                     </li>
                                     <li>
@@ -423,7 +358,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button>
+                            <button class="button button--secondary event-card__action" type="button" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button>
                         </article>
                     </div>
                     <div class="event-empty surface-panel" id="event-empty" hidden>
@@ -436,17 +371,14 @@
                     <div class="help-panel__intro">
                         <h2 id="help-title">Не нашли ответ<br>на свой вопрос?</h2>
                         <p>Наши специалисты помогут вам разобраться и ответят на все вопросы.</p>
-                        <a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%B0%D0%BC">Задать вопрос</a>
+                        <a class="button button--primary button-question" href="mailto:inclusion@edu.mos.ru">Задать вопрос</a>
                     </div>
                     <img class="help-panel__image" src="assets/img/help-illustration.webp" width="337" height="225" alt="" loading="lazy" decoding="async">
                     <div class="help-panel__contacts">
                         <h3>Консультации</h3>
                         <div class="contact-item">
                             <span class="icon-box">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <circle cx="12" cy="7" r="4"/>
-                                    <path d="M4 21v-3a8 8 0 0 1 16 0v3"/>
-                                </svg>
+                                <img alt="" src="assets/img/user.svg">
                             </span>
                             <div>
                                 <p class="contact-item__title">Ольга Олеговна Унгурян</p>
@@ -455,10 +387,7 @@
                         </div>
                         <div class="contact-item">
                             <span class="icon-box">
-                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <rect x="3" y="5" width="18" height="14" rx="2"/>
-                                    <path d="m3 6 9 7 9-7"/>
-                                </svg>
+                                <img alt="" src="assets/img/contact.svg">
                             </span>
                             <div>
                                 <a class="contact-item__title" href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a>
@@ -469,29 +398,6 @@
                 </section>
             </div>
         </main>
-        <div class="modal fade info-modal" id="event-details" tabindex="-1" aria-labelledby="event-details-title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="event-details-title">Инклюзивное образование: новые возможности</h2>
-                        <button class="info-modal__close" type="button" data-bs-dismiss="modal" aria-label="Закрыть окно">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
-                        <p id="event-detail-type">Конференция</p>
-                        <p>
-                            <time datetime="2026-09-28">28 сентября 2026</time>
-                        </p>
-                        <p>11:00–13:00</p>
-                        <p>107143, г. Москва, Вербная улица, д. 7</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=%D0%98%D0%BD%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%3A%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Задать вопрос</a>
-                        <button class="button button--secondary" type="button" data-bs-dismiss="modal">Закрыть</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <footer class="site-footer">
             <div class="container site-footer__inner">
                 <div class="site-footer__brand">

@@ -1663,9 +1663,10 @@ h1, h2, h3, p, dl {
     & h3 {
         font-size: 32px;
         line-height: 39px;
-        font-weight: 600;
+        font-weight: 700;
         letter-spacing: -.6px;
         margin-bottom: 16px;
+        color: #2D5B58;
     }
     &__description {
         font-size: 20px;
@@ -1675,6 +1676,7 @@ h1, h2, h3, p, dl {
     }
     & .button {
         margin-top: 24px;
+        border-radius: 24px;
     }
     &__visual {
         position: relative;
@@ -2392,6 +2394,23 @@ h1, h2, h3, p, dl {
         }
     }
 }
+
+.button-map{
+    &::after{
+        content: '';
+        background-image: url('../img/icon-arrow-color.svg');
+        width: 24px;
+        height: 24px;
+        margin-left: 12px;
+    }
+}
+
+.label-conf{
+    span{
+        color: #1F5FB1;
+    }
+}
+
 .colleges-hero {
     position:relative;
     min-height:464px;

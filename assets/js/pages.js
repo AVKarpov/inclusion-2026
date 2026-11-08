@@ -24,7 +24,7 @@
         });
     });
 
-    const projectTabs = document.querySelector('.project-browser__tabs');
+    const projectTabs = document.querySelector('.project-browser__tabs[role="tablist"]');
     if (projectTabs) {
         const wideScreen = window.matchMedia('(min-width: 992px)');
         const setOrientation = () => projectTabs.setAttribute('aria-orientation', wideScreen.matches ? 'vertical' : 'horizontal');
@@ -59,16 +59,6 @@
         filters.addEventListener('reset', () => requestAnimationFrame(applyFilters));
         document.querySelector('#event-reset').addEventListener('click', () => filters.reset());
     }
-
-    const eventDialog = document.querySelector('#event-details');
-    eventDialog?.addEventListener('show.bs.modal', (event) => {
-        const card = event.relatedTarget?.closest('.event-card');
-        if (!card) return;
-        const type = card.querySelector('.event-card__type span').textContent;
-        const title = card.querySelector('h3').textContent;
-        eventDialog.querySelector('#event-detail-type').textContent = type;
-        eventDialog.querySelector('.modal-footer a').href = `mailto:inclusion@edu.mos.ru?subject=${encodeURIComponent(`Вопрос о событии: ${title} (${type})`)}`;
-    });
 
     document.querySelectorAll('.info-modal').forEach((dialog) => {
         dialog.addEventListener('shown.bs.modal', () => {
