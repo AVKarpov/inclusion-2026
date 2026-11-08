@@ -1,87 +1,619 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Каталог колледжей Москвы: программы, специальные условия и помощь в выборе колледжа для абитуриентов с инвалидностью и ОВЗ.">
-    <meta name="theme-color" content="#2d5b58">
-    <title>Колледжи Москвы — Инклюзия</title>
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/inter-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20261101">
-    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="stylesheet" href="assets/css/colleges.css">
-    <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/colleges.js" defer></script>
-</head>
-<body>
-<a class="skip-link" href="#main">Перейти к содержанию</a>
-<header class="site-header">
-    <nav class="navbar navbar-expand-xl site-header__nav" aria-label="Основная навигация">
-        <div class="container">
-            <a class="brand" href="index.html" aria-label="Инклюзия — главная">Инклюзия</a>
-            <button class="navbar-toggler site-header__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
-            <div class="collapse navbar-collapse site-header__collapse" id="main-nav">
-                <ul class="navbar-nav site-header__menu">
-                    <li class="nav-item"><a class="nav-link site-header__link" href="index.html" >Главная</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="colleges.html" aria-current="page">Колледжи</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="applicants.html">Абитуриентам</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="support.html">РУМЦ СПО и БПОО</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="events.html">Проекты и события</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="contacts.html">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="index.html#documents">Документы</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="index.html#faq">Вопросы</a></li>
-                </ul>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Каталог колледжей Москвы: программы, специальные условия и помощь в выборе колледжа для абитуриентов с инвалидностью и ОВЗ.">
+        <meta name="theme-color" content="#2d5b58">
+        <title>Колледжи Москвы — Инклюзия</title>
+        <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+        <link rel="preload" href="assets/fonts/inter-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/style.css?v=20261102">
+        <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+        <script src="assets/js/main.js" defer></script>
+        <script src="assets/js/colleges.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Перейти к содержанию</a>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-xl site-header__nav" aria-label="Основная навигация">
+                <div class="container">
+                    <a class="brand" href="index.html" aria-label="Инклюзия — главная">Инклюзия</a>
+                    <button class="navbar-toggler site-header__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="collapse navbar-collapse site-header__collapse" id="main-nav">
+                        <ul class="navbar-nav site-header__menu">
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="index.html" >Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="colleges.html" aria-current="page">Колледжи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="applicants.html">Абитуриентам</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="support.html">РУМЦ СПО и БПОО</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="events.html">Проекты и события</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="contacts.html">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="index.html#documents">Документы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="index.html#faq">Вопросы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="page page--colleges" id="main" tabindex="-1">
+            <div class="container">
+                <section class="colleges-hero" aria-labelledby="colleges-title">
+                    <div class="colleges-hero__content">
+                        <h1 class="colleges-hero__title" id="colleges-title">Колледжи<br>Москвы</h1>
+                        <p class="colleges-hero__description">Сравните колледжи Москвы: образовательные программы, условия поступления и возможности обучения для студентов с инвалидностью и ОВЗ.</p>
+                        <div class="colleges-hero__actions">
+                            <a class="button button--primary" href="#directory">Подобрать колледж</a>
+                            <button class="button button--secondary" id="toggle-images" type="button" aria-pressed="false">Убрать все изображения</button>
+                        </div>
+                    </div>
+                    <img class="colleges-hero__image" src="assets/img/colleges-hero.webp" width="743" height="422" alt="Доступное здание колледжа" fetchpriority="high">
+                </section>
+                <section class="directory section" id="directory" aria-labelledby="directory-title">
+                    <h2 class="visually-hidden" id="directory-title">Каталог колледжей</h2>
+                    <div class="directory__layout">
+                        <aside class="filters" aria-labelledby="filters-title">
+                            <form class="filters__form" id="college-filters">
+                                <div class="filters__heading">
+                                    <h3 id="filters-title">Фильтры</h3>
+                                    <button class="filters__reset" type="reset">Сбросить</button>
+                                </div>
+                                <label class="filters__field" for="district">
+                                    <span>Округ</span>
+                                    <select id="district" name="district">
+                                        <option value="">Любой округ</option>
+                                    </select>
+                                </label>
+                                <label class="filters__field" for="college-search">
+                                    <span>Колледж</span>
+                                    <input id="college-search" name="college" type="search" placeholder="Выбрать" autocomplete="off">
+                                </label>
+                                <label class="filters__field" for="profession">
+                                    <span>Профессия</span>
+                                    <select id="profession" name="profession">
+                                        <option value="">Любая профессия</option>
+                                    </select>
+                                </label>
+                                <fieldset class="filters__group">
+                                    <legend>Статус (БПОО / РУМЦ)</legend>
+                                    <label>
+                                        <input type="checkbox" name="status" value="bpoo">
+                                        <span>БПОО</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="status" value="rumc">
+                                        <span>РУМЦ</span>
+                                    </label>
+                                </fieldset>
+                                <fieldset class="filters__group">
+                                    <legend>Маркеры доступности</legend>
+                                    <label>
+                                        <input type="checkbox" name="access" value="vision">
+                                        <span>Для слабовидящих</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="access" value="hearing">
+                                        <span>Для слабослышащих</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="access" value="mobility">
+                                        <span>Для маломобильных</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="access" value="autism">
+                                        <span>Для студентов с РАС</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="access" value="support">
+                                        <span>Сопровождение</span>
+                                    </label>
+                                </fieldset>
+                                <button class="button button--primary filters__apply" type="submit">Применить фильтры</button>
+                                <a class="button button--secondary filters__map" href="https://yandex.ru/maps/?text=%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%B4%D0%B6%D0%B8%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B" target="_blank" rel="noopener noreferrer">Поиск на Яндекс Картах</a>
+                                <p class="filters__hint">Откроется поиск колледжей в Яндекс Картах. Фильтры каталога не передаются.</p>
+                                <div class="filters__legend">
+                                    <h3>Что означает маркер доступности?</h3>
+                                    <p>Мы отмечаем особенности доступной среды в колледжах, чтобы вам было проще выбрать подходящее место обучения.</p>
+                                    <ul>
+                                        <li><span aria-hidden="true">◉</span> Для слабовидящих</li>
+                                        <li><span aria-hidden="true">◉</span> Для слабослышащих</li>
+                                        <li><span aria-hidden="true">♿</span> Для маломобильных</li>
+                                        <li><span aria-hidden="true">◇</span> Для студентов с РАС</li>
+                                        <li><span aria-hidden="true">✳</span> Сопровождение</li>
+                                    </ul>
+                                </div>
+                                <div class="filters__help">
+                                    <h3>Нужна помощь<br>в выборе колледжа?</h3>
+                                    <p>Наши специалисты помогут подобрать подходящую программу и ответят на все вопросы.</p>
+                                    <a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=Запись%20на%20консультацию">Запись на консультацию</a>
+                                    <img src="assets/img/colleges-help.webp" width="272" height="272" alt="" loading="lazy">
+                                </div>
+                            </form>
+                        </aside>
+                        <div class="directory__results">
+                            <p class="directory__count" aria-live="polite">Показано колледжей: <strong id="college-count">7</strong></p>
+                            <div class="directory__cards" id="college-cards">
+                                <article class="college-card" data-college-id="1" data-search="московский образовательный комплекс имени виктора талалихина" data-status="bpoo rumc" data-access="vision hearing mobility autism support">
+                                    <div class="college-card__media">
+                                        <div class="college-card__image-wrap">
+                                            <img class="college-card__image" src="assets/img/college-1.webp" width="190" height="190" alt="Логотип: Московский образовательный комплекс имени Виктора Талалихина" loading="lazy">
+                                        </div>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="1" aria-label="Подробнее: Московский образовательный комплекс имени Виктора Талалихина">Подробнее</button>
+                                    </div>
+                                    <div class="college-card__info">
+                                        <div>
+                                            <h3 class="college-card__name">Московский образовательный комплекс имени Виктора Талалихина</h3>
+                                            <p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                        </div>
+                                        <div>
+                                            <div class="college-card__contacts">
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </div>
+                                            <div class="college-card__bottom">
+                                                <div class="college-card__features" aria-label="Маркеры доступности">
+                                                    <span title="Для слабовидящих">◉</span>
+                                                    <span title="Для слабослышащих">◉</span>
+                                                    <span title="Для маломобильных">♿</span>
+                                                    <span title="Для студентов с РАС">◇</span>
+                                                    <span title="Сопровождение">✳</span>
+                                                </div>
+                                                <div class="college-card__badges">
+                                                    <span>БПОО</span>
+                                                    <span>РУМЦ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="college-card" data-college-id="2" data-search="московский колледж управления, гостиничного бизнеса и информационных технологий «царицыно»" data-status="bpoo rumc" data-access="vision hearing mobility autism support">
+                                    <div class="college-card__media">
+                                        <div class="college-card__image-wrap">
+                                            <img class="college-card__image" src="assets/img/college-2.webp" width="190" height="190" alt="Логотип: Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»" loading="lazy">
+                                        </div>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="2" aria-label="Подробнее: Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»">Подробнее</button>
+                                    </div>
+                                    <div class="college-card__info">
+                                        <div>
+                                            <h3 class="college-card__name">Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»</h3>
+                                            <p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                        </div>
+                                        <div>
+                                            <div class="college-card__contacts">
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </div>
+                                            <div class="college-card__bottom">
+                                                <div class="college-card__features" aria-label="Маркеры доступности">
+                                                    <span title="Для слабовидящих">◉</span>
+                                                    <span title="Для слабослышащих">◉</span>
+                                                    <span title="Для маломобильных">♿</span>
+                                                    <span title="Для студентов с РАС">◇</span>
+                                                    <span title="Сопровождение">✳</span>
+                                                </div>
+                                                <div class="college-card__badges">
+                                                    <span>БПОО</span>
+                                                    <span>РУМЦ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="college-card" data-college-id="3" data-search="московский автомобильно-дорожный колледж имени а. а. николаева" data-status="bpoo rumc" data-access="vision hearing mobility autism support">
+                                    <div class="college-card__media">
+                                        <div class="college-card__image-wrap">
+                                            <img class="college-card__image" src="assets/img/college-3.webp" width="190" height="190" alt="Логотип: Московский автомобильно-дорожный колледж имени А. А. Николаева" loading="lazy">
+                                        </div>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="3" aria-label="Подробнее: Московский автомобильно-дорожный колледж имени А. А. Николаева">Подробнее</button>
+                                    </div>
+                                    <div class="college-card__info">
+                                        <div>
+                                            <h3 class="college-card__name">Московский автомобильно-дорожный колледж имени А. А. Николаева</h3>
+                                            <p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                        </div>
+                                        <div>
+                                            <div class="college-card__contacts">
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </div>
+                                            <div class="college-card__bottom">
+                                                <div class="college-card__features" aria-label="Маркеры доступности">
+                                                    <span title="Для слабовидящих">◉</span>
+                                                    <span title="Для слабослышащих">◉</span>
+                                                    <span title="Для маломобильных">♿</span>
+                                                    <span title="Для студентов с РАС">◇</span>
+                                                    <span title="Сопровождение">✳</span>
+                                                </div>
+                                                <div class="college-card__badges">
+                                                    <span>БПОО</span>
+                                                    <span>РУМЦ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="college-card" data-college-id="4" data-search="московский колледж архитектуры и градостроительства" data-status="bpoo rumc" data-access="vision hearing mobility autism support">
+                                    <div class="college-card__media">
+                                        <div class="college-card__image-wrap">
+                                            <img class="college-card__image" src="assets/img/college-4.webp" width="190" height="190" alt="Логотип: Московский колледж архитектуры и градостроительства" loading="lazy">
+                                        </div>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="4" aria-label="Подробнее: Московский колледж архитектуры и градостроительства">Подробнее</button>
+                                    </div>
+                                    <div class="college-card__info">
+                                        <div>
+                                            <h3 class="college-card__name">Московский колледж архитектуры и градостроительства</h3>
+                                            <p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                        </div>
+                                        <div>
+                                            <div class="college-card__contacts">
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </div>
+                                            <div class="college-card__bottom">
+                                                <div class="college-card__features" aria-label="Маркеры доступности">
+                                                    <span title="Для слабовидящих">◉</span>
+                                                    <span title="Для слабослышащих">◉</span>
+                                                    <span title="Для маломобильных">♿</span>
+                                                    <span title="Для студентов с РАС">◇</span>
+                                                    <span title="Сопровождение">✳</span>
+                                                </div>
+                                                <div class="college-card__badges">
+                                                    <span>БПОО</span>
+                                                    <span>РУМЦ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="college-card" data-college-id="5" data-search="московский городской педагогический университет" data-status="bpoo rumc" data-access="vision hearing mobility autism support">
+                                    <div class="college-card__media">
+                                        <div class="college-card__image-wrap">
+                                            <img class="college-card__image" src="assets/img/college-5.webp" width="190" height="190" alt="Логотип: Московский городской педагогический университет" loading="lazy">
+                                        </div>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="5" aria-label="Подробнее: Московский городской педагогический университет">Подробнее</button>
+                                    </div>
+                                    <div class="college-card__info">
+                                        <div>
+                                            <h3 class="college-card__name">Московский городской педагогический университет</h3>
+                                            <p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                        </div>
+                                        <div>
+                                            <div class="college-card__contacts">
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </div>
+                                            <div class="college-card__bottom">
+                                                <div class="college-card__features" aria-label="Маркеры доступности">
+                                                    <span title="Для слабовидящих">◉</span>
+                                                    <span title="Для слабослышащих">◉</span>
+                                                    <span title="Для маломобильных">♿</span>
+                                                    <span title="Для студентов с РАС">◇</span>
+                                                    <span title="Сопровождение">✳</span>
+                                                </div>
+                                                <div class="college-card__badges">
+                                                    <span>БПОО</span>
+                                                    <span>РУМЦ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="college-card" data-college-id="6" data-search="колледж автоматизации и информационных технологий № 20" data-status="bpoo rumc" data-access="vision hearing mobility autism support">
+                                    <div class="college-card__media">
+                                        <div class="college-card__image-wrap">
+                                            <img class="college-card__image" src="assets/img/college-6.webp" width="190" height="190" alt="Логотип: Колледж автоматизации и информационных технологий № 20" loading="lazy">
+                                        </div>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="6" aria-label="Подробнее: Колледж автоматизации и информационных технологий № 20">Подробнее</button>
+                                    </div>
+                                    <div class="college-card__info">
+                                        <div>
+                                            <h3 class="college-card__name">Колледж автоматизации и информационных технологий № 20</h3>
+                                            <p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                        </div>
+                                        <div>
+                                            <div class="college-card__contacts">
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </div>
+                                            <div class="college-card__bottom">
+                                                <div class="college-card__features" aria-label="Маркеры доступности">
+                                                    <span title="Для слабовидящих">◉</span>
+                                                    <span title="Для слабослышащих">◉</span>
+                                                    <span title="Для маломобильных">♿</span>
+                                                    <span title="Для студентов с РАС">◇</span>
+                                                    <span title="Сопровождение">✳</span>
+                                                </div>
+                                                <div class="college-card__badges">
+                                                    <span>БПОО</span>
+                                                    <span>РУМЦ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="college-card" data-college-id="7" data-search="колледж архитектуры, дизайна и реинжиниринга № 26" data-status="bpoo rumc" data-access="vision hearing mobility autism support">
+                                    <div class="college-card__media">
+                                        <div class="college-card__image-wrap">
+                                            <img class="college-card__image" src="assets/img/college-7.webp" width="190" height="190" alt="Логотип: Колледж архитектуры, дизайна и реинжиниринга № 26" loading="lazy">
+                                        </div>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="7" aria-label="Подробнее: Колледж архитектуры, дизайна и реинжиниринга № 26">Подробнее</button>
+                                    </div>
+                                    <div class="college-card__info">
+                                        <div>
+                                            <h3 class="college-card__name">Колледж архитектуры, дизайна и реинжиниринга № 26</h3>
+                                            <p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                        </div>
+                                        <div>
+                                            <div class="college-card__contacts">
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </div>
+                                            <div class="college-card__bottom">
+                                                <div class="college-card__features" aria-label="Маркеры доступности">
+                                                    <span title="Для слабовидящих">◉</span>
+                                                    <span title="Для слабослышащих">◉</span>
+                                                    <span title="Для маломобильных">♿</span>
+                                                    <span title="Для студентов с РАС">◇</span>
+                                                    <span title="Сопровождение">✳</span>
+                                                </div>
+                                                <div class="college-card__badges">
+                                                    <span>БПОО</span>
+                                                    <span>РУМЦ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="empty-state" id="college-empty" hidden>
+                                <h3>Колледжи не найдены</h3>
+                                <p>По выбранным условиям колледжи не найдены. Попробуйте изменить запрос или сбросьте фильтры.</p>
+                                <button class="button button--secondary" type="button" id="empty-reset">Сбросить фильтры</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="modal fade college-modal" id="college-modal" tabindex="-1" aria-labelledby="college-modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable college-modal__dialog">
+                <div class="modal-content college-modal__content">
+                    <div class="modal-header college-modal__header">
+                        <p class="college-modal__eyebrow">Информация о колледже</p>
+                        <button class="college-modal__close" type="button" data-bs-dismiss="modal" aria-label="Закрыть окно">×</button>
+                    </div>
+                    <div class="modal-body college-modal__body">
+                        <section class="college-detail" aria-labelledby="college-modal-title">
+                            <div class="college-detail__hero">
+                                <div class="college-detail__logo-wrap">
+                                    <img class="college-detail__logo" id="detail-logo" src="assets/img/detail-main.webp" width="263" height="246" alt="Логотип Московского образовательного комплекса имени Виктора Талалихина">
+                                </div>
+                                <div class="college-detail__intro">
+                                    <h2 class="college-detail__title" id="college-modal-title">Московский образовательный комплекс имени Виктора Талалихина</h2>
+                                    <p class="college-detail__description" id="detail-description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                    <div class="college-detail__badges" id="detail-badges">
+                                        <span>БПОО</span>
+                                        <span>РУМЦ</span>
+                                    </div>
+                                    <dl class="college-detail__contacts" id="detail-contacts">
+                                        <div>
+                                            <dt>Телефон</dt>
+                                            <dd>
+                                                <a href="tel:+74991634083">+7 (499) 163-40-83</a>
+                                            </dd>
+                                        </div>
+                                        <div>
+                                            <dt>Адрес</dt>
+                                            <dd>107143, г. Москва, Вербная улица, д. 7</dd>
+                                        </div>
+                                        <div>
+                                            <dt>Почта</dt>
+                                            <dd>
+                                                <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                    <div class="college-detail__actions">
+                                        <a class="button button--primary" id="detail-question" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20о%20колледже">Задать вопрос о колледже</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="admissions" id="detail-admissions" aria-labelledby="admissions-title">
+                                <h3 id="admissions-title">Данные о приёме</h3>
+                                <p>В таблице показано наличие приёма по учебным годам: «Да» — приём указан, «Нет» — не указан. Разверните группу, чтобы увидеть направления.</p>
+                                <div class="admissions__scroll" role="region" aria-label="Данные о приёме по учебным годам" tabindex="0">
+                                    <table class="admissions__table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Группы специальностей<br>и направления подготовки</th>
+                                                <th scope="col">Приём<br>2025–2026</th>
+                                                <th scope="col">Приём<br>2026–2027</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="admissions__group">
+                                                <th scope="row">Техносферная безопасность и природообустройство <small>20.00.00</small></th>
+                                                <td>
+                                                    <span class="admissions__yes">Да</span>
+                                                </td>
+                                                <td>
+                                                    <span class="admissions__no">Нет</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="admissions__group">
+                                                <th scope="row">Авиационная и ракетно-космическая техника <small>24.00.00</small></th>
+                                                <td>
+                                                    <span class="admissions__yes">Да</span>
+                                                </td>
+                                                <td>
+                                                    <span class="admissions__no">Нет</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="admissions__group">
+                                                <th scope="row">
+                                                    <button type="button" class="admissions__toggle" aria-expanded="true" aria-controls="program-12">Фотоника, приборостроение, оптические и биотехнические системы и технологии <small>12.00.00</small></button>
+                                                </th>
+                                                <td>
+                                                    <span class="admissions__no">Нет</span>
+                                                </td>
+                                                <td>
+                                                    <span class="admissions__yes">Да</span>
+                                                </td>
+                                            </tr>
+                                            <tr id="program-12" class="admissions__subrow">
+                                                <td colspan="3">
+                                                    <div class="admissions__programs">
+                                                        <div>
+                                                            <span>Оптотехника <small>12.03.02</small></span>
+                                                            <span class="admissions__no">Нет</span>
+                                                            <span class="admissions__yes">Да</span>
+                                                        </div>
+                                                        <div>
+                                                            <span>Биотехнические системы и технологии <small>12.03.04</small></span>
+                                                            <span class="admissions__no">Нет</span>
+                                                            <span class="admissions__yes">Да</span>
+                                                        </div>
+                                                        <div>
+                                                            <span>Лазерная техника и лазерные технологии <small>12.03.05</small></span>
+                                                            <span class="admissions__no">Нет</span>
+                                                            <span class="admissions__yes">Да</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="admissions__group">
+                                                <th scope="row">Изобразительное и прикладные виды искусств <small>54.00.00</small></th>
+                                                <td>
+                                                    <span class="admissions__yes">Да</span>
+                                                </td>
+                                                <td>
+                                                    <span class="admissions__no">Нет</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="admissions__note">Сроки подачи заявления, требования и специальные условия обучения уточняйте в колледже. Данные по направлениям и учебным годам требуют подтверждения.</p>
+                            </section>
+                            <section class="detail-gallery" id="detail-gallery" aria-labelledby="gallery-title">
+                                <h3 id="gallery-title">Галерея</h3>
+                                <div class="detail-gallery__grid">
+                                    <img src="assets/img/detail-gallery-1.webp" width="411" height="245" alt="Фотография колледжа 1" loading="lazy">
+                                    <img src="assets/img/detail-gallery-2.webp" width="411" height="245" alt="Фотография колледжа 2" loading="lazy">
+                                    <img src="assets/img/detail-gallery-3.webp" width="411" height="245" alt="Фотография колледжа 3" loading="lazy">
+                                    <img src="assets/img/detail-gallery-4.webp" width="411" height="245" alt="Фотография колледжа 4" loading="lazy">
+                                    <img src="assets/img/detail-gallery-5.webp" width="411" height="245" alt="Фотография колледжа 5" loading="lazy">
+                                    <img src="assets/img/detail-gallery-6.webp" width="411" height="245" alt="Фотография колледжа 6" loading="lazy">
+                                </div>
+                            </section>
+                            <section class="detail-help" aria-labelledby="detail-help-title">
+                                <div>
+                                    <h3 id="detail-help-title">Не нашли ответ<br>на свой вопрос?</h3>
+                                    <p>Наши специалисты помогут вам разобраться и ответят на все вопросы.</p>
+                                    <a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20о%20колледже">Задать вопрос</a>
+                                </div>
+                                <img src="assets/img/detail-help.webp" width="337" height="225" alt="" loading="lazy">
+                                <div class="detail-help__contact">
+                                    <h4>Консультации</h4>
+                                    <strong>Ольга Олеговна Унгурян</strong>
+                                    <span>Начальник отдела региональных и федеральных образовательных проектов</span>
+                                    <a href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a>
+                                    <span>Вопросы о выборе колледжа, поступлении и условиях обучения</span>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
-
-<main class="page page--colleges" id="main" tabindex="-1"><div class="container">
-<section class="colleges-hero" aria-labelledby="colleges-title"><div class="colleges-hero__content"><h1 class="colleges-hero__title" id="colleges-title">Колледжи<br>Москвы</h1><p class="colleges-hero__description">Сравните колледжи Москвы: образовательные программы, условия поступления и возможности обучения для студентов с инвалидностью и ОВЗ.</p><div class="colleges-hero__actions"><a class="button button--primary" href="#directory">Подобрать колледж</a><button class="button button--secondary" id="toggle-images" type="button" aria-pressed="false">Убрать все изображения</button></div></div><img class="colleges-hero__image" src="assets/img/colleges-hero.webp" width="743" height="422" alt="Доступное здание колледжа" fetchpriority="high"></section>
-<section class="directory section" id="directory" aria-labelledby="directory-title"><h2 class="visually-hidden" id="directory-title">Каталог колледжей</h2><div class="directory__layout">
-<aside class="filters" aria-labelledby="filters-title"><form class="filters__form" id="college-filters"><div class="filters__heading"><h3 id="filters-title">Фильтры</h3><button class="filters__reset" type="reset">Сбросить</button></div>
-<label class="filters__field" for="district"><span>Округ</span><select id="district" name="district"><option value="">Любой округ</option></select></label>
-<label class="filters__field" for="college-search"><span>Колледж</span><input id="college-search" name="college" type="search" placeholder="Выбрать" autocomplete="off"></label>
-<label class="filters__field" for="profession"><span>Профессия</span><select id="profession" name="profession"><option value="">Любая профессия</option></select></label>
-<fieldset class="filters__group"><legend>Статус (БПОО / РУМЦ)</legend><label><input type="checkbox" name="status" value="bpoo"><span>БПОО</span></label><label><input type="checkbox" name="status" value="rumc"><span>РУМЦ</span></label></fieldset>
-<fieldset class="filters__group"><legend>Маркеры доступности</legend><label><input type="checkbox" name="access" value="vision"><span>Для слабовидящих</span></label><label><input type="checkbox" name="access" value="hearing"><span>Для слабослышащих</span></label><label><input type="checkbox" name="access" value="mobility"><span>Для маломобильных</span></label><label><input type="checkbox" name="access" value="autism"><span>Для студентов с РАС</span></label><label><input type="checkbox" name="access" value="support"><span>Сопровождение</span></label></fieldset>
-<button class="button button--primary filters__apply" type="submit">Применить фильтры</button><a class="button button--secondary filters__map" href="https://yandex.ru/maps/?text=%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%B4%D0%B6%D0%B8%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B" target="_blank" rel="noopener noreferrer">Поиск на Яндекс Картах</a><p class="filters__hint">Откроется поиск колледжей в Яндекс Картах. Фильтры каталога не передаются.</p>
-<div class="filters__legend"><h3>Что означает маркер доступности?</h3><p>Мы отмечаем особенности доступной среды в колледжах, чтобы вам было проще выбрать подходящее место обучения.</p><ul><li><span aria-hidden="true">◉</span> Для слабовидящих</li><li><span aria-hidden="true">◉</span> Для слабослышащих</li><li><span aria-hidden="true">♿</span> Для маломобильных</li><li><span aria-hidden="true">◇</span> Для студентов с РАС</li><li><span aria-hidden="true">✳</span> Сопровождение</li></ul></div>
-<div class="filters__help"><h3>Нужна помощь<br>в выборе колледжа?</h3><p>Наши специалисты помогут подобрать подходящую программу и ответят на все вопросы.</p><a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=Запись%20на%20консультацию">Запись на консультацию</a><img src="assets/img/colleges-help.webp" width="272" height="272" alt="" loading="lazy"></div></form></aside>
-<div class="directory__results"><p class="directory__count" aria-live="polite">Показано колледжей: <strong id="college-count">7</strong></p><div class="directory__cards" id="college-cards">
-<article class="college-card" data-college-id="1" data-search="московский образовательный комплекс имени виктора талалихина" data-status="bpoo rumc" data-access="vision hearing mobility autism support"><div class="college-card__media"><div class="college-card__image-wrap"><img class="college-card__image" src="assets/img/college-1.webp" width="190" height="190" alt="Логотип: Московский образовательный комплекс имени Виктора Талалихина" loading="lazy"></div><button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="1" aria-label="Подробнее: Московский образовательный комплекс имени Виктора Талалихина">Подробнее</button></div><div class="college-card__info"><div><h3 class="college-card__name">Московский образовательный комплекс имени Виктора Талалихина</h3><p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p></div><div><div class="college-card__contacts"><a href="tel:+74991634083">+7 (499) 163-40-83</a><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a><span>107143, г. Москва, Вербная улица, д. 7</span></div><div class="college-card__bottom"><div class="college-card__features" aria-label="Маркеры доступности"><span title="Для слабовидящих">◉</span><span title="Для слабослышащих">◉</span><span title="Для маломобильных">♿</span><span title="Для студентов с РАС">◇</span><span title="Сопровождение">✳</span></div><div class="college-card__badges"><span>БПОО</span><span>РУМЦ</span></div></div></div></div></article>
-<article class="college-card" data-college-id="2" data-search="московский колледж управления, гостиничного бизнеса и информационных технологий «царицыно»" data-status="bpoo rumc" data-access="vision hearing mobility autism support"><div class="college-card__media"><div class="college-card__image-wrap"><img class="college-card__image" src="assets/img/college-2.webp" width="190" height="190" alt="Логотип: Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»" loading="lazy"></div><button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="2" aria-label="Подробнее: Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»">Подробнее</button></div><div class="college-card__info"><div><h3 class="college-card__name">Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»</h3><p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p></div><div><div class="college-card__contacts"><a href="tel:+74991634083">+7 (499) 163-40-83</a><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a><span>107143, г. Москва, Вербная улица, д. 7</span></div><div class="college-card__bottom"><div class="college-card__features" aria-label="Маркеры доступности"><span title="Для слабовидящих">◉</span><span title="Для слабослышащих">◉</span><span title="Для маломобильных">♿</span><span title="Для студентов с РАС">◇</span><span title="Сопровождение">✳</span></div><div class="college-card__badges"><span>БПОО</span><span>РУМЦ</span></div></div></div></div></article>
-<article class="college-card" data-college-id="3" data-search="московский автомобильно-дорожный колледж имени а. а. николаева" data-status="bpoo rumc" data-access="vision hearing mobility autism support"><div class="college-card__media"><div class="college-card__image-wrap"><img class="college-card__image" src="assets/img/college-3.webp" width="190" height="190" alt="Логотип: Московский автомобильно-дорожный колледж имени А. А. Николаева" loading="lazy"></div><button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="3" aria-label="Подробнее: Московский автомобильно-дорожный колледж имени А. А. Николаева">Подробнее</button></div><div class="college-card__info"><div><h3 class="college-card__name">Московский автомобильно-дорожный колледж имени А. А. Николаева</h3><p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p></div><div><div class="college-card__contacts"><a href="tel:+74991634083">+7 (499) 163-40-83</a><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a><span>107143, г. Москва, Вербная улица, д. 7</span></div><div class="college-card__bottom"><div class="college-card__features" aria-label="Маркеры доступности"><span title="Для слабовидящих">◉</span><span title="Для слабослышащих">◉</span><span title="Для маломобильных">♿</span><span title="Для студентов с РАС">◇</span><span title="Сопровождение">✳</span></div><div class="college-card__badges"><span>БПОО</span><span>РУМЦ</span></div></div></div></div></article>
-<article class="college-card" data-college-id="4" data-search="московский колледж архитектуры и градостроительства" data-status="bpoo rumc" data-access="vision hearing mobility autism support"><div class="college-card__media"><div class="college-card__image-wrap"><img class="college-card__image" src="assets/img/college-4.webp" width="190" height="190" alt="Логотип: Московский колледж архитектуры и градостроительства" loading="lazy"></div><button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="4" aria-label="Подробнее: Московский колледж архитектуры и градостроительства">Подробнее</button></div><div class="college-card__info"><div><h3 class="college-card__name">Московский колледж архитектуры и градостроительства</h3><p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p></div><div><div class="college-card__contacts"><a href="tel:+74991634083">+7 (499) 163-40-83</a><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a><span>107143, г. Москва, Вербная улица, д. 7</span></div><div class="college-card__bottom"><div class="college-card__features" aria-label="Маркеры доступности"><span title="Для слабовидящих">◉</span><span title="Для слабослышащих">◉</span><span title="Для маломобильных">♿</span><span title="Для студентов с РАС">◇</span><span title="Сопровождение">✳</span></div><div class="college-card__badges"><span>БПОО</span><span>РУМЦ</span></div></div></div></div></article>
-<article class="college-card" data-college-id="5" data-search="московский городской педагогический университет" data-status="bpoo rumc" data-access="vision hearing mobility autism support"><div class="college-card__media"><div class="college-card__image-wrap"><img class="college-card__image" src="assets/img/college-5.webp" width="190" height="190" alt="Логотип: Московский городской педагогический университет" loading="lazy"></div><button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="5" aria-label="Подробнее: Московский городской педагогический университет">Подробнее</button></div><div class="college-card__info"><div><h3 class="college-card__name">Московский городской педагогический университет</h3><p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p></div><div><div class="college-card__contacts"><a href="tel:+74991634083">+7 (499) 163-40-83</a><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a><span>107143, г. Москва, Вербная улица, д. 7</span></div><div class="college-card__bottom"><div class="college-card__features" aria-label="Маркеры доступности"><span title="Для слабовидящих">◉</span><span title="Для слабослышащих">◉</span><span title="Для маломобильных">♿</span><span title="Для студентов с РАС">◇</span><span title="Сопровождение">✳</span></div><div class="college-card__badges"><span>БПОО</span><span>РУМЦ</span></div></div></div></div></article>
-<article class="college-card" data-college-id="6" data-search="колледж автоматизации и информационных технологий № 20" data-status="bpoo rumc" data-access="vision hearing mobility autism support"><div class="college-card__media"><div class="college-card__image-wrap"><img class="college-card__image" src="assets/img/college-6.webp" width="190" height="190" alt="Логотип: Колледж автоматизации и информационных технологий № 20" loading="lazy"></div><button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="6" aria-label="Подробнее: Колледж автоматизации и информационных технологий № 20">Подробнее</button></div><div class="college-card__info"><div><h3 class="college-card__name">Колледж автоматизации и информационных технологий № 20</h3><p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p></div><div><div class="college-card__contacts"><a href="tel:+74991634083">+7 (499) 163-40-83</a><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a><span>107143, г. Москва, Вербная улица, д. 7</span></div><div class="college-card__bottom"><div class="college-card__features" aria-label="Маркеры доступности"><span title="Для слабовидящих">◉</span><span title="Для слабослышащих">◉</span><span title="Для маломобильных">♿</span><span title="Для студентов с РАС">◇</span><span title="Сопровождение">✳</span></div><div class="college-card__badges"><span>БПОО</span><span>РУМЦ</span></div></div></div></div></article>
-<article class="college-card" data-college-id="7" data-search="колледж архитектуры, дизайна и реинжиниринга № 26" data-status="bpoo rumc" data-access="vision hearing mobility autism support"><div class="college-card__media"><div class="college-card__image-wrap"><img class="college-card__image" src="assets/img/college-7.webp" width="190" height="190" alt="Логотип: Колледж архитектуры, дизайна и реинжиниринга № 26" loading="lazy"></div><button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="7" aria-label="Подробнее: Колледж архитектуры, дизайна и реинжиниринга № 26">Подробнее</button></div><div class="college-card__info"><div><h3 class="college-card__name">Колледж архитектуры, дизайна и реинжиниринга № 26</h3><p class="college-card__description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p></div><div><div class="college-card__contacts"><a href="tel:+74991634083">+7 (499) 163-40-83</a><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a><span>107143, г. Москва, Вербная улица, д. 7</span></div><div class="college-card__bottom"><div class="college-card__features" aria-label="Маркеры доступности"><span title="Для слабовидящих">◉</span><span title="Для слабослышащих">◉</span><span title="Для маломобильных">♿</span><span title="Для студентов с РАС">◇</span><span title="Сопровождение">✳</span></div><div class="college-card__badges"><span>БПОО</span><span>РУМЦ</span></div></div></div></div></article>
-</div><div class="empty-state" id="college-empty" hidden><h3>Колледжи не найдены</h3><p>По выбранным условиям колледжи не найдены. Попробуйте изменить запрос или сбросьте фильтры.</p><button class="button button--secondary" type="button" id="empty-reset">Сбросить фильтры</button></div></div></div></section></div></main>
-<div class="modal fade college-modal" id="college-modal" tabindex="-1" aria-labelledby="college-modal-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-dialog-scrollable college-modal__dialog"><div class="modal-content college-modal__content"><div class="modal-header college-modal__header"><p class="college-modal__eyebrow">Информация о колледже</p><button class="college-modal__close" type="button" data-bs-dismiss="modal" aria-label="Закрыть окно">×</button></div><div class="modal-body college-modal__body">
-<section class="college-detail" aria-labelledby="college-modal-title"><div class="college-detail__hero"><div class="college-detail__logo-wrap"><img class="college-detail__logo" id="detail-logo" src="assets/img/detail-main.webp" width="263" height="246" alt="Логотип Московского образовательного комплекса имени Виктора Талалихина"></div><div class="college-detail__intro"><h2 class="college-detail__title" id="college-modal-title">Московский образовательный комплекс имени Виктора Талалихина</h2><p class="college-detail__description" id="detail-description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p><div class="college-detail__badges" id="detail-badges"><span>БПОО</span><span>РУМЦ</span></div><dl class="college-detail__contacts" id="detail-contacts"><div><dt>Телефон</dt><dd><a href="tel:+74991634083">+7 (499) 163-40-83</a></dd></div><div><dt>Адрес</dt><dd>107143, г. Москва, Вербная улица, д. 7</dd></div><div><dt>Почта</dt><dd><a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a></dd></div></dl><div class="college-detail__actions"><a class="button button--primary" id="detail-question" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20о%20колледже">Задать вопрос о колледже</a></div></div></div>
-
-<section class="admissions" id="detail-admissions" aria-labelledby="admissions-title"><h3 id="admissions-title">Данные о приёме</h3><p>В таблице показано наличие приёма по учебным годам: «Да» — приём указан, «Нет» — не указан. Разверните группу, чтобы увидеть направления.</p><div class="admissions__scroll" role="region" aria-label="Данные о приёме по учебным годам" tabindex="0"><table class="admissions__table"><thead><tr><th scope="col">Группы специальностей<br>и направления подготовки</th><th scope="col">Приём<br>2025–2026</th><th scope="col">Приём<br>2026–2027</th></tr></thead><tbody>
-<tr class="admissions__group"><th scope="row">Техносферная безопасность и природообустройство <small>20.00.00</small></th><td><span class="admissions__yes">Да</span></td><td><span class="admissions__no">Нет</span></td></tr>
-<tr class="admissions__group"><th scope="row">Авиационная и ракетно-космическая техника <small>24.00.00</small></th><td><span class="admissions__yes">Да</span></td><td><span class="admissions__no">Нет</span></td></tr>
-<tr class="admissions__group"><th scope="row"><button type="button" class="admissions__toggle" aria-expanded="true" aria-controls="program-12">Фотоника, приборостроение, оптические и биотехнические системы и технологии <small>12.00.00</small></button></th><td><span class="admissions__no">Нет</span></td><td><span class="admissions__yes">Да</span></td></tr><tr id="program-12" class="admissions__subrow"><td colspan="3"><div class="admissions__programs"><div><span>Оптотехника <small>12.03.02</small></span><span class="admissions__no">Нет</span><span class="admissions__yes">Да</span></div><div><span>Биотехнические системы и технологии <small>12.03.04</small></span><span class="admissions__no">Нет</span><span class="admissions__yes">Да</span></div><div><span>Лазерная техника и лазерные технологии <small>12.03.05</small></span><span class="admissions__no">Нет</span><span class="admissions__yes">Да</span></div></div></td></tr>
-<tr class="admissions__group"><th scope="row">Изобразительное и прикладные виды искусств <small>54.00.00</small></th><td><span class="admissions__yes">Да</span></td><td><span class="admissions__no">Нет</span></td></tr>
-</tbody></table></div><p class="admissions__note">Сроки подачи заявления, требования и специальные условия обучения уточняйте в колледже. Данные по направлениям и учебным годам требуют подтверждения.</p></section>
-<section class="detail-gallery" id="detail-gallery" aria-labelledby="gallery-title"><h3 id="gallery-title">Галерея</h3><div class="detail-gallery__grid">
-<img src="assets/img/detail-gallery-1.webp" width="411" height="245" alt="Фотография колледжа 1" loading="lazy">
-<img src="assets/img/detail-gallery-2.webp" width="411" height="245" alt="Фотография колледжа 2" loading="lazy">
-<img src="assets/img/detail-gallery-3.webp" width="411" height="245" alt="Фотография колледжа 3" loading="lazy">
-<img src="assets/img/detail-gallery-4.webp" width="411" height="245" alt="Фотография колледжа 4" loading="lazy">
-<img src="assets/img/detail-gallery-5.webp" width="411" height="245" alt="Фотография колледжа 5" loading="lazy">
-<img src="assets/img/detail-gallery-6.webp" width="411" height="245" alt="Фотография колледжа 6" loading="lazy">
-</div></section><section class="detail-help" aria-labelledby="detail-help-title"><div><h3 id="detail-help-title">Не нашли ответ<br>на свой вопрос?</h3><p>Наши специалисты помогут вам разобраться и ответят на все вопросы.</p><a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20о%20колледже">Задать вопрос</a></div><img src="assets/img/detail-help.webp" width="337" height="225" alt="" loading="lazy"><div class="detail-help__contact"><h4>Консультации</h4><strong>Ольга Олеговна Унгурян</strong><span>Начальник отдела региональных и федеральных образовательных проектов</span><a href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a><span>Вопросы о выборе колледжа, поступлении и условиях обучения</span></div></section></section></div></div></div></div>
-<footer class="site-footer"><div class="container site-footer__inner"><div class="site-footer__brand"><a class="brand" href="index.html">Инклюзия</a><div class="site-footer__socials" aria-label="Социальные сети">
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 3-5 18-6-6-5 3 1-7-4-3 19-5Zm-15 8L21 3 10 15"/></svg></a>
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="ВКонтакте"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5c0 8 4 14 10 14v-5c3 0 5 3 6 5h3c-1-4-4-6-6-7 2-2 4-4 5-7h-4c-1 3-3 6-4 6V5H9v8C6 10 6 7 6 5Z"/></svg></a>
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Мессенджер"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11a9 9 0 0 1-9 9 10 10 0 0 1-4-1l-5 2 1-5a9 9 0 1 1 17-5Z"/></svg></a>
-</div><a class="site-footer__privacy" role="link" aria-disabled="true" data-page="privacy.html">Политика обработки данных</a></div><nav class="site-footer__nav" aria-label="Навигация в подвале">
-<ul class="site-footer__list"><li><a class="site-footer__link" href="index.html">Главная</a></li><li><a class="site-footer__link" href="colleges.html" aria-current="page">Колледжи</a></li><li><a class="site-footer__link" href="applicants.html">Абитуриентам</a></li><li><a class="site-footer__link" href="support.html">РУМЦ СПО и БПОО</a></li></ul>
-<ul class="site-footer__list"><li><a class="site-footer__link" href="events.html">Проекты и события</a></li><li><a class="site-footer__link" href="index.html#documents">Документы</a></li><li><a class="site-footer__link" href="contacts.html">Контакты</a></li><li><a class="site-footer__link" href="index.html#faq">Вопросы</a></li></ul>
-</nav><address class="site-footer__contacts"><p class="site-footer__caption">Общие контакты</p><a href="mailto:info@mgpu.ru">info@mgpu.ru</a><a href="tel:+74951981588">+7 (495) 198-15-88</a><p>107143, г. Москва,<br>ул. Бакунинская, 55 с 4</p></address></div></footer></body></html>
+        <footer class="site-footer">
+            <div class="container site-footer__inner">
+                <div class="site-footer__brand">
+                    <a class="brand" href="index.html">Инклюзия</a>
+                    <div class="site-footer__socials" aria-label="Социальные сети">
+                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Telegram">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="m21 3-5 18-6-6-5 3 1-7-4-3 19-5Zm-15 8L21 3 10 15"/>
+                            </svg>
+                        </a>
+                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="ВКонтакте">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 5c0 8 4 14 10 14v-5c3 0 5 3 6 5h3c-1-4-4-6-6-7 2-2 4-4 5-7h-4c-1 3-3 6-4 6V5H9v8C6 10 6 7 6 5Z"/>
+                            </svg>
+                        </a>
+                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Мессенджер">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 11a9 9 0 0 1-9 9 10 10 0 0 1-4-1l-5 2 1-5a9 9 0 1 1 17-5Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="site-footer__privacy" role="link" aria-disabled="true" data-page="privacy.html">Политика обработки данных</a>
+                </div>
+                <nav class="site-footer__nav" aria-label="Навигация в подвале">
+                    <ul class="site-footer__list">
+                        <li>
+                            <a class="site-footer__link" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="colleges.html" aria-current="page">Колледжи</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="applicants.html">Абитуриентам</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="support.html">РУМЦ СПО и БПОО</a>
+                        </li>
+                    </ul>
+                    <ul class="site-footer__list">
+                        <li>
+                            <a class="site-footer__link" href="events.html">Проекты и события</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="index.html#documents">Документы</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="index.html#faq">Вопросы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="site-footer__contacts">
+                    <p class="site-footer__caption">Общие контакты</p>
+                    <a href="mailto:info@mgpu.ru">info@mgpu.ru</a>
+                    <a href="tel:+74951981588">+7 (495) 198-15-88</a>
+                    <p>107143, г. Москва,<br>ул. Бакунинская, 55 с 4</p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>

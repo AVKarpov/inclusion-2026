@@ -1,117 +1,455 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Инклюзивное образование в колледжах Москвы: равные возможности, помощь в выборе профессии, специальные условия обучения и консультации.">
-    <meta name="theme-color" content="#2d5b58">
-    <title>Инклюзия — образование для каждого</title>
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/inter-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20261101">
-    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-</head>
-<body>
-<a class="skip-link" href="#main">Перейти к содержанию</a>
-<header class="site-header">
-    <nav class="navbar navbar-expand-xl site-header__nav" aria-label="Основная навигация">
-        <div class="container">
-            <a class="brand" href="index.html" aria-label="Инклюзия — главная">Инклюзия</a>
-            <button class="navbar-toggler site-header__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
-            <div class="collapse navbar-collapse site-header__collapse" id="main-nav">
-                <ul class="navbar-nav site-header__menu">
-                    <li class="nav-item"><a class="nav-link site-header__link" href="index.html" aria-current="page">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="colleges.html">Колледжи</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="applicants.html">Абитуриентам</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="support.html">РУМЦ СПО и БПОО</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="events.html">Проекты и события</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="contacts.html">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="#documents">Документы</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="#faq">Вопросы</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<main class="page" id="main" tabindex="-1">
-    <div class="container">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero__content">
-                <h1 class="hero__title" id="hero-title">Инклюзивное<br>образование</h1>
-                <p class="hero__description">Образование — право каждого человека.<br>Наша приоритетная задача — создание равных возможностей для получения качественного образования, раскрытия потенциала и профессионального развития каждого обучающегося, в том числе лиц с инвалидностью и ограниченными возможностями здоровья</p>
-                <div class="hero__actions">
-                    <a class="button button--primary" href="#benefits">Как мы помогаем</a>
-                    <a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20инклюзивном%20образовании">Задать вопрос</a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Инклюзивное образование в колледжах Москвы: равные возможности, помощь в выборе профессии, специальные условия обучения и консультации.">
+        <meta name="theme-color" content="#2d5b58">
+        <title>Инклюзия — образование для каждого</title>
+        <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+        <link rel="preload" href="assets/fonts/inter-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/style.css?v=20261102">
+        <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+        <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Перейти к содержанию</a>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-xl site-header__nav" aria-label="Основная навигация">
+                <div class="container">
+                    <a class="brand" href="index.html" aria-label="Инклюзия — главная">Инклюзия</a>
+                    <button class="navbar-toggler site-header__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="collapse navbar-collapse site-header__collapse" id="main-nav">
+                        <ul class="navbar-nav site-header__menu">
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="index.html" aria-current="page">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="colleges.html">Колледжи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="applicants.html">Абитуриентам</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="support.html">РУМЦ СПО и БПОО</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="events.html">Проекты и события</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="contacts.html">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="#documents">Документы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="#faq">Вопросы</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <dl class="hero__metrics">
-<div class="metric"><dt class="metric__label">Студентов и слушателей с инвалидностью и ОВЗ</dt><dd class="metric__value"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87M15 3.13a4 4 0 0 1 0 7.75M13 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg></span>4 000</dd></div>
-<div class="metric"><dt class="metric__label">Образовательных программ</dt><dd class="metric__value"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v15m0-15C8 2 3 4 3 4v14s5-2 9 2c4-4 9-2 9-2V4s-5-2-9 1Z"/></svg></span>150+</dd></div>
-<div class="metric"><dt class="metric__label">Колледжа Москвы</dt><dd class="metric__value"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V3h12v18M2 21h20M16 9h4v12M8 7h4M8 11h4M8 15h4M9 21v-3h2v3"/></svg></span>53</dd></div>
-</dl></div><img class="hero__image" src="assets/img/hero-1.webp" width="652" height="550" alt="Студенты, в том числе девушка на инвалидной коляске, учатся вместе" fetchpriority="high"></section>
-<section class="section" id="benefits" aria-labelledby="benefits-title"><h2 class="section__title" id="benefits-title">Мы создаём равные условия</h2><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-3">
-<div class="col"><article class="benefit-card"><img class="benefit-card__image" src="assets/img/benefit-1.webp" width="168" height="168" alt="" loading="lazy" decoding="async"><h3 class="benefit-card__title">Ассистент и техническая помощь</h3></article></div>
-<div class="col"><article class="benefit-card"><img class="benefit-card__image" src="assets/img/benefit-2.webp" width="168" height="168" alt="" loading="lazy" decoding="async"><h3 class="benefit-card__title">Перевод на русский жестовый язык и тифлосурдоперевод</h3></article></div>
-<div class="col"><article class="benefit-card"><img class="benefit-card__image" src="assets/img/benefit-3.webp" width="168" height="168" alt="" loading="lazy" decoding="async"><h3 class="benefit-card__title">Психолого-педагогическая помощь</h3></article></div>
-<div class="col"><article class="benefit-card"><img class="benefit-card__image" src="assets/img/benefit-4.webp" width="168" height="168" alt="" loading="lazy" decoding="async"><h3 class="benefit-card__title">Коррекционные занятия: индивидуально и в группе</h3></article></div>
-<div class="col"><article class="benefit-card"><img class="benefit-card__image" src="assets/img/benefit-5.webp" width="168" height="168" alt="" loading="lazy" decoding="async"><h3 class="benefit-card__title">Адаптированные образовательные программы</h3></article></div>
-</div></section><section class="section" id="directions" aria-labelledby="directions-title"><h2 class="section__title" id="directions-title">Основные направления</h2><div class="row g-3">
-<div class="col-md-6"><article class="direction-card direction-card--1"><div class="direction-card__content"><h3 class="direction-card__title">Колледжи</h3><p class="direction-card__description">Найдите колледж и подходящую образовательную программу</p></div><img class="direction-card__image" src="assets/img/direction-1.webp" width="354" height="276" alt="" loading="lazy" decoding="async"><a class="round-link direction-card__link" href="colleges.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">Колледжи</span></a></article></div>
-<div class="col-md-6"><article class="direction-card direction-card--2"><div class="direction-card__content"><h3 class="direction-card__title">Абитуриентам</h3><p class="direction-card__description">Узнайте, как выбрать профессию и поступить в колледж</p></div><img class="direction-card__image" src="assets/img/direction-2.webp" width="354" height="276" alt="" loading="lazy" decoding="async"><a class="round-link direction-card__link" href="applicants.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">Абитуриентам</span></a></article></div>
-<div class="col-md-6"><article class="direction-card direction-card--3"><div class="direction-card__content"><h3 class="direction-card__title">РУМЦ СПО<br>и БПОО</h3><p class="direction-card__description">Методическая поддержка колледжей и доступного образования</p></div><img class="direction-card__image" src="assets/img/direction-3.webp" width="354" height="276" alt="" loading="lazy" decoding="async"><a class="round-link direction-card__link" href="support.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">РУМЦ СПО и БПОО</span></a></article></div>
-<div class="col-md-6"><article class="direction-card direction-card--4"><div class="direction-card__content"><h3 class="direction-card__title">Проекты<br>и события</h3><p class="direction-card__description">Проекты, мероприятия и возможности для участия</p></div><img class="direction-card__image" src="assets/img/direction-4.webp" width="354" height="276" alt="" loading="lazy" decoding="async"><a class="round-link direction-card__link" href="events.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">Проекты и события</span></a></article></div>
-</div></section><section class="section" id="documents" aria-labelledby="documents-title"><h2 class="section__title" id="documents-title">Документы</h2><div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
-<div class="col"><article class="document-card"><img class="document-card__image" src="assets/img/document-1.webp" width="100" height="100" alt="" loading="lazy" decoding="async"><h3 class="document-card__title">Федеральные документы</h3><a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=1" title="Документы готовятся к публикации"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">Федеральные документы</span></a></article></div>
-<div class="col"><article class="document-card"><img class="document-card__image" src="assets/img/document-2.webp" width="100" height="100" alt="" loading="lazy" decoding="async"><h3 class="document-card__title">Письма</h3><a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=2" title="Документы готовятся к публикации"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">Письма</span></a></article></div>
-<div class="col"><article class="document-card"><img class="document-card__image" src="assets/img/document-3.webp" width="100" height="100" alt="" loading="lazy" decoding="async"><h3 class="document-card__title">Методические рекомендации</h3><a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=3" title="Документы готовятся к публикации"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">Методические рекомендации</span></a></article></div>
-<div class="col"><article class="document-card"><img class="document-card__image" src="assets/img/document-4.webp" width="100" height="100" alt="" loading="lazy" decoding="async"><h3 class="document-card__title">Приказы</h3><a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=4" title="Документы готовятся к публикации"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg><span class="visually-hidden">Приказы</span></a></article></div>
-</div></section>
-<section class="section contact-panel" id="contacts" aria-labelledby="contacts-title">
-<div class="contact-panel__content"><h2 class="section__title" id="contacts-title">Контакты для связи</h2><p class="contact-panel__description">Нужна консультация или дополнительная информация? Напишите нам — поможем разобраться.</p>
-<div class="contact-item"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a6 6 0 0 0-6-6h-4a6 6 0 0 0-6 6v2M16 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg></span><div><h3 class="contact-item__title">Ольга Олеговна Унгурян</h3><p class="contact-item__description">Начальник отдела региональных и федеральных образовательных проектов</p></div></div>
-<div class="contact-item"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v14H3ZM3 5l9 7 9-7"/></svg></span><div><a class="contact-item__title" href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a><p class="contact-item__description">Принимаем обращения по всем направлениям деятельности</p></div></div>
-<a class="button button--primary contact-panel__button" href="mailto:inclusion@edu.mos.ru?subject=Обращение%20с%20сайта%20Инклюзия">Написать нам</a></div><img class="contact-panel__image" src="assets/img/contacts-1.webp" width="636" height="408" alt="" loading="lazy" decoding="async"></section>
-<section class="section faq" id="faq" aria-labelledby="faq-title"><h2 class="section__title faq__title" id="faq-title">Ответы на часто задаваемые вопросы</h2><div class="faq__layout"><div class="nav faq__categories" role="tablist" aria-label="Категории вопросов" aria-orientation="vertical">
-<button class="faq-category nav-link active" id="faq-tab-0" data-bs-toggle="tab" data-bs-target="#faq-panel-0" type="button" role="tab" aria-controls="faq-panel-0" aria-selected="true" tabindex="0"><img class="faq-category__image" src="assets/img/faq-1.webp" width="64" height="64" alt="" loading="lazy" decoding="async"><span class="faq-category__label">Поступление <br>в колледж</span></button>
-<button class="faq-category nav-link " id="faq-tab-1" data-bs-toggle="tab" data-bs-target="#faq-panel-1" type="button" role="tab" aria-controls="faq-panel-1" aria-selected="false" tabindex="-1"><img class="faq-category__image" src="assets/img/faq-2.webp" width="64" height="64" alt="" loading="lazy" decoding="async"><span class="faq-category__label">Доступная <br>образовательная среда</span></button>
-<button class="faq-category nav-link " id="faq-tab-2" data-bs-toggle="tab" data-bs-target="#faq-panel-2" type="button" role="tab" aria-controls="faq-panel-2" aria-selected="false" tabindex="-1"><img class="faq-category__image" src="assets/img/faq-3.webp" width="64" height="64" alt="" loading="lazy" decoding="async"><span class="faq-category__label">Образовательные <br>программы</span></button>
-<button class="faq-category nav-link " id="faq-tab-3" data-bs-toggle="tab" data-bs-target="#faq-panel-3" type="button" role="tab" aria-controls="faq-panel-3" aria-selected="false" tabindex="-1"><img class="faq-category__image" src="assets/img/faq-4.webp" width="64" height="64" alt="" loading="lazy" decoding="async"><span class="faq-category__label">Организация <br>обучения</span></button>
-</div><div class="tab-content faq__panels">
-<div class="tab-pane show active faq__panel" id="faq-panel-0" role="tabpanel" aria-labelledby="faq-tab-0" tabindex="0"><div class="faq__questions">
-<details class="faq-item" open><summary class="faq-item__question">Кто может поступить в колледж?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Поступить на программы среднего профессионального образования могут выпускники 9-х и 11-х классов, имеющие соответствующий документ об образовании. Обучение по программам профессионального обучения доступно при наличии свидетельства об обучении.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Есть ли в колледжах бюджетные места?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Да, в колледжах предусмотрены бюджетные места. Их наличие и количество зависят от программы и колледжа. Проверьте план приёма на нужный учебный год на официальном сайте выбранного колледжа.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Какие документы необходимы для поступления?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Для поступления на СПО нужны паспорт и документ об образовании с приложением. Дополнительные документы зависят от программы и условий приёма: например, подтверждение льгот, индивидуальных достижений или медицинская справка. Актуальный перечень уточните в приёмной комиссии выбранного колледжа.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Как подать заявление на поступление?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Заявление в колледжи Москвы можно подать онлайн через городской сервис приёма. Перейдите к нему с официального портала колледжей Москвы и следуйте инструкции. Сроки подачи и дальнейшие действия уточняйте в правилах приёма выбранного колледжа.</p></div></details>
-</div><a class="button button--primary faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос</a></div>
-<div class="tab-pane  faq__panel" id="faq-panel-1" role="tabpanel" aria-labelledby="faq-tab-1" tabindex="0"><div class="faq__questions">
-<details class="faq-item" open><summary class="faq-item__question">Могут ли лица с инвалидностью и ОВЗ обучаться в колледже?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Да, лица с инвалидностью и ограниченными возможностями здоровья имеют право на получение среднего профессионального образования и профессионального обучения. Колледжи создают необходимые специальные условия с учетом индивидуальных особенностей и образовательных потребностей обучающихся.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Какие специальные условия обучения предусмотрены для студентов с ОВЗ и инвалидностью?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Специальные условия определяются с учётом индивидуальных образовательных потребностей. Они могут включать адаптированную программу, специальные учебные материалы и технические средства, помощь ассистента, переводчика и психолого-педагогическую поддержку. Нужные условия заранее обсудите с колледжем.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Нужно ли предоставлять заключение ЦПМПК при поступлении?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Заключение ЦПМПК содержит рекомендации о специальных условиях обучения. Если такие условия нужны, заранее уточните в приёмной комиссии, нужно ли представить заключение для выбранной программы и какие ещё документы потребуются.</p></div></details>
-</div><a class="button button--primary faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос</a></div>
-<div class="tab-pane  faq__panel" id="faq-panel-2" role="tabpanel" aria-labelledby="faq-tab-2" tabindex="0"><div class="faq__questions">
-<details class="faq-item" open><summary class="faq-item__question">Чем отличается среднее профессиональное образование (СПО) от профессионального обучения (ПО)?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Среднее профессиональное образование позволяет получить профессию или специальность и соответствующий уровень образования. Профессиональное обучение направлено на приобретение конкретной рабочей профессии или должности служащего без изменения уровня образования.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Можно ли поступить на профессиональное обучение без аттестата?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Для некоторых категорий поступающих предусмотрены программы профессионального обучения без аттестата. Например, проект «Профессиональное обучение без границ» предусматривает обучение лиц с ОВЗ, не имеющих основного общего или среднего общего образования. Подходящую программу и требования к документам уточните в колледже.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Какой документ выдается после окончания обучения?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>После успешного завершения СПО и итоговой аттестации выдают диплом о среднем профессиональном образовании. После профессионального обучения и успешной сдачи квалификационного экзамена — свидетельство о профессии рабочего или должности служащего. Это разные образовательные маршруты.</p></div></details>
-</div><a class="button button--primary faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос</a></div>
-<div class="tab-pane  faq__panel" id="faq-panel-3" role="tabpanel" aria-labelledby="faq-tab-3" tabindex="0"><div class="faq__questions">
-<details class="faq-item" open><summary class="faq-item__question">Как организована практика во время обучения?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Практическая подготовка проводится в учебных мастерских, лабораториях колледжей и на площадках организаций-партнеров. При необходимости создаются специальные условия с учетом индивидуальных особенностей обучающихся с инвалидностью и ОВЗ.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Сколько длится обучение в колледже?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Единого срока для всех программ нет. Продолжительность зависит от профессии или специальности, базы поступления и формы обучения. Точный срок указан в описании выбранной программы и в плане приёма колледжа.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Предусмотрено ли сопровождение студентов с инвалидностью и ОВЗ во время обучения?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>Сопровождение организуется с учётом индивидуальных потребностей студента и рекомендаций специалистов. Его состав и порядок получения нужно согласовать с колледжем. За консультацией по сопровождению обучения можно обратиться в РУМЦ СПО.</p></div></details>
-<details class="faq-item" ><summary class="faq-item__question">Помогают ли колледжи с трудоустройством после окончания обучения?<span class="faq-item__indicator" aria-hidden="true"></span></summary><div class="faq-item__answer"><p>В колледжах могут работать центры содействия трудоустройству: они помогают искать вакансии, готовить резюме и проходить собеседования. Узнайте в своём колледже, какие услуги доступны выпускникам с инвалидностью и ОВЗ. За консультацией по трудоустройству можно обратиться и в РУМЦ СПО.</p></div></details>
-</div><a class="button button--primary faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос</a></div>
-</div></div></section>
-<section class="section consultation" aria-labelledby="consultation-title"><div class="consultation__content"><h2 class="section__title" id="consultation-title">Запись на консультацию</h2><p class="consultation__description">Поможем подобрать колледж, программу и ответим на все ваши вопросы</p><ul class="consultation__benefits">
-<li class="consultation__benefit"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Подберём колледж и программу с учётом ваших интересов</li>
-<li class="consultation__benefit"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Ответим на вопросы о поступлении, обучении и документах</li>
-<li class="consultation__benefit"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Согласуем удобное время консультации</li>
-</ul><a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=Запись%20на%20консультацию">Записаться на консультацию</a></div><img class="consultation__image" src="assets/img/consultation-1.webp" width="650" height="449" alt="" loading="lazy" decoding="async"></section></div></main>
-<footer class="site-footer"><div class="container site-footer__inner"><div class="site-footer__brand"><a class="brand" href="index.html">Инклюзия</a><div class="site-footer__socials" aria-label="Социальные сети">
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 3-5 18-6-6-5 3 1-7-4-3 19-5Zm-15 8L21 3 10 15"/></svg></a>
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="ВКонтакте"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5c0 8 4 14 10 14v-5c3 0 5 3 6 5h3c-1-4-4-6-6-7 2-2 4-4 5-7h-4c-1 3-3 6-4 6V5H9v8C6 10 6 7 6 5Z"/></svg></a>
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Мессенджер"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11a9 9 0 0 1-9 9 10 10 0 0 1-4-1l-5 2 1-5a9 9 0 1 1 17-5Z"/></svg></a>
-</div><a class="site-footer__privacy" role="link" aria-disabled="true" data-page="privacy.html">Политика обработки данных</a></div><nav class="site-footer__nav" aria-label="Навигация в подвале">
-<ul class="site-footer__list"><li><a class="site-footer__link" href="index.html" aria-current="page">Главная</a></li><li><a class="site-footer__link" href="colleges.html">Колледжи</a></li><li><a class="site-footer__link" href="applicants.html">Абитуриентам</a></li><li><a class="site-footer__link" href="support.html">РУМЦ СПО и БПОО</a></li></ul>
-<ul class="site-footer__list"><li><a class="site-footer__link" href="events.html">Проекты и события</a></li><li><a class="site-footer__link" href="#documents">Документы</a></li><li><a class="site-footer__link" href="contacts.html">Контакты</a></li><li><a class="site-footer__link" href="#faq">Вопросы</a></li></ul>
-</nav><address class="site-footer__contacts"><p class="site-footer__caption">Общие контакты</p><a href="mailto:info@mgpu.ru">info@mgpu.ru</a><a href="tel:+74951981588">+7 (495) 198-15-88</a><p>107143, г. Москва,<br>ул. Бакунинская, 55 с 4</p></address></div></footer></body></html>
+            </nav>
+        </header>
+        <main class="page" id="main" tabindex="-1">
+            <div class="container">
+                <section class="hero" aria-labelledby="hero-title">
+                    <div class="hero__content">
+                        <h1 class="hero__title" id="hero-title">Инклюзивное<br>образование</h1>
+                        <p class="hero__description">Образование — право каждого человека.<br>Наша приоритетная задача — создание равных возможностей для получения качественного образования, раскрытия потенциала и профессионального развития каждого обучающегося, в том числе лиц с инвалидностью и ограниченными возможностями здоровья</p>
+                        <div class="hero__actions">
+                            <a class="button button--primary" href="#benefits">Как мы помогаем</a>
+                            <a class="button button--secondary button_question" href="mailto:inclusion@edu.mos.ru">Задать вопрос</a>
+                        </div>
+                        <dl class="hero__metrics">
+                            <div class="metric">
+                                <dt class="metric__label">Студентов и слушателей с инвалидностью и ОВЗ</dt>
+                                <dd class="metric__value"><span class="icon-box">
+                                    <img alt="" src="assets/img/users.svg">
+                                </span>4 000 </dd>
+                            </div>
+                            <div class="metric">
+                                <dt class="metric__label">Образовательных программ</dt>
+                                <dd class="metric__value"><span class="icon-box">
+                                    <img alt="" src="assets/img/book.svg">
+                                </span>150+ </dd>
+                            </div>
+                            <div class="metric">
+                                <dt class="metric__label">Колледжа Москвы</dt>
+                                <dd class="metric__value"><span class="icon-box">
+                                    <img alt="" src="assets/img/building.svg">
+                                </span>53 </dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <img class="hero__image" src="assets/img/hero-1.webp" width="652" height="550" alt="Студенты, в том числе девушка на инвалидной коляске, учатся вместе" fetchpriority="high">
+                </section>
+                <section class="section" id="benefits" aria-labelledby="benefits-title">
+                    <h2 class="section__title" id="benefits-title">Мы создаём равные условия</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-3">
+                        <div class="col">
+                            <article class="benefit-card">
+                                <img class="benefit-card__image" src="assets/img/benefit-1.webp" width="168" height="168" alt="" loading="lazy" decoding="async">
+                                <h3 class="benefit-card__title">Ассистент и техническая помощь</h3>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="benefit-card">
+                                <img class="benefit-card__image" src="assets/img/benefit-2.webp" width="168" height="168" alt="" loading="lazy" decoding="async">
+                                <h3 class="benefit-card__title">Перевод на русский жестовый язык и тифлосурдоперевод</h3>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="benefit-card">
+                                <img class="benefit-card__image" src="assets/img/benefit-3.webp" width="168" height="168" alt="" loading="lazy" decoding="async">
+                                <h3 class="benefit-card__title">Психолого-педагогическая помощь</h3>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="benefit-card">
+                                <img class="benefit-card__image" src="assets/img/benefit-4.webp" width="168" height="168" alt="" loading="lazy" decoding="async">
+                                <h3 class="benefit-card__title">Коррекционные занятия: индивидуально и в группе</h3>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="benefit-card">
+                                <img class="benefit-card__image" src="assets/img/benefit-5.webp" width="168" height="168" alt="" loading="lazy" decoding="async">
+                                <h3 class="benefit-card__title">Адаптированные образовательные программы</h3>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="directions" aria-labelledby="directions-title">
+                    <h2 class="section__title" id="directions-title">Основные направления</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <article class="direction-card direction-card--1">
+                                <div class="direction-card__content">
+                                    <h3 class="direction-card__title">Колледжи</h3>
+                                    <p class="direction-card__description">Найдите колледж и подходящую образовательную программу</p>
+                                </div>
+                                <img class="direction-card__image" src="assets/img/direction-1.webp" width="354" height="276" alt="" loading="lazy" decoding="async">
+                                <a class="round-link direction-card__link" href="colleges.html">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">Колледжи</span>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="direction-card direction-card--2">
+                                <div class="direction-card__content">
+                                    <h3 class="direction-card__title">Абитуриентам</h3>
+                                    <p class="direction-card__description">Узнайте, как выбрать профессию и поступить в колледж</p>
+                                </div>
+                                <img class="direction-card__image" src="assets/img/direction-2.webp" width="354" height="276" alt="" loading="lazy" decoding="async">
+                                <a class="round-link direction-card__link" href="applicants.html">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">Абитуриентам</span>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="direction-card direction-card--3">
+                                <div class="direction-card__content">
+                                    <h3 class="direction-card__title">РУМЦ СПО<br>и БПОО</h3>
+                                    <p class="direction-card__description">Методическая поддержка колледжей и доступного образования</p>
+                                </div>
+                                <img class="direction-card__image" src="assets/img/direction-3.webp" width="354" height="276" alt="" loading="lazy" decoding="async">
+                                <a class="round-link direction-card__link" href="support.html">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">РУМЦ СПО и БПОО</span>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <article class="direction-card direction-card--4">
+                                <div class="direction-card__content">
+                                    <h3 class="direction-card__title">Проекты<br>и события</h3>
+                                    <p class="direction-card__description">Проекты, мероприятия и возможности для участия</p>
+                                </div>
+                                <img class="direction-card__image" src="assets/img/direction-4.webp" width="354" height="276" alt="" loading="lazy" decoding="async">
+                                <a class="round-link direction-card__link" href="events.html">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">Проекты и события</span>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" id="documents" aria-labelledby="documents-title">
+                    <h2 class="section__title" id="documents-title"> Документы</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+                        <div class="col">
+                            <article class="document-card">
+                                <img class="document-card__image" src="assets/img/document-1.webp" width="100" height="100" alt="" loading="lazy" decoding="async">
+                                <h3 class="document-card__title">Федеральные документы</h3>
+                                <a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=1" title="Документы готовятся к публикации">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">Федеральные документы</span>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="document-card">
+                                <img class="document-card__image" src="assets/img/document-2.webp" width="100" height="100" alt="" loading="lazy" decoding="async">
+                                <h3 class="document-card__title">Письма</h3>
+                                <a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=2" title="Документы готовятся к публикации">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">Письма</span>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="document-card">
+                                <img class="document-card__image" src="assets/img/document-3.webp" width="100" height="100" alt="" loading="lazy" decoding="async">
+                                <h3 class="document-card__title">Методические рекомендации</h3>
+                                <a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=3" title="Документы готовятся к публикации">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">Методические рекомендации</span>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="document-card">
+                                <img class="document-card__image" src="assets/img/document-4.webp" width="100" height="100" alt="" loading="lazy" decoding="async">
+                                <h3 class="document-card__title">Приказы</h3>
+                                <a class="round-link document-card__link" role="link" aria-disabled="true" data-page="documents.html?category=4" title="Документы готовятся к публикации">
+                                    <img alt="" src="assets/img/arrow-action.svg">
+                                    <span class="visually-hidden">Приказы</span>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="section contact-panel" id="contacts" aria-labelledby="contacts-title">
+                    <div class="contact-panel__content">
+                        <h2 class="section__title" id="contacts-title">Контакты для связи</h2>
+                        <p class="contact-panel__description">Нужна консультация или дополнительная информация? Напишите нам — поможем разобраться.</p>
+                        <div class="contact-item">
+                            <span class="icon-box">
+                                <img alt="" src="assets/img/user.svg">
+                            </span>
+                            <div>
+                                <h3 class="contact-item__title">Ольга Олеговна Унгурян</h3>
+                                <p class="contact-item__description">Начальник отдела региональных и федеральных образовательных проектов</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon-box">
+                                <img alt="" src="assets/img/contact.svg">
+                            </span>
+                            <div>
+                                <a class="contact-item__title" href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a>
+                                <p class="contact-item__description">Принимаем обращения по всем направлениям деятельности</p>
+                            </div>
+                        </div>
+                        <a class="button button--primary contact-panel__button" href="mailto:inclusion@edu.mos.ru">Написать специалистам </a>
+                    </div>
+                    <img class="contact-panel__image" src="assets/img/contacts-1.webp" width="636" height="408" alt="" loading="lazy" decoding="async">
+                </section>
+                <section class="section faq" id="faq" aria-labelledby="faq-title">
+                    <h2 class="section__title faq__title" id="faq-title">Ответы на часто задаваемые вопросы</h2>
+                    <div class="faq__layout">
+                        <div class="nav faq__categories" role="tablist" aria-label="Категории вопросов" aria-orientation="horizontal">
+                            <button class="faq-category nav-link active" id="faq-tab-0" data-bs-toggle="tab" data-bs-target="#faq-panel-0" type="button" role="tab" aria-controls="faq-panel-0" aria-selected="true" tabindex="0">
+                                <img class="faq-category__image" src="assets/img/faq-1.webp" width="64" height="64" alt="" loading="lazy" decoding="async">
+                                <span class="faq-category__label">Поступление <br>в колледж</span>
+                            </button>
+                            <button class="faq-category nav-link " id="faq-tab-1" data-bs-toggle="tab" data-bs-target="#faq-panel-1" type="button" role="tab" aria-controls="faq-panel-1" aria-selected="false" tabindex="-1">
+                                <img class="faq-category__image" src="assets/img/faq-2.webp" width="64" height="64" alt="" loading="lazy" decoding="async">
+                                <span class="faq-category__label">Доступная <br>образовательная среда</span>
+                            </button>
+                            <button class="faq-category nav-link " id="faq-tab-2" data-bs-toggle="tab" data-bs-target="#faq-panel-2" type="button" role="tab" aria-controls="faq-panel-2" aria-selected="false" tabindex="-1">
+                                <img class="faq-category__image" src="assets/img/faq-3.webp" width="64" height="64" alt="" loading="lazy" decoding="async">
+                                <span class="faq-category__label">Образовательные <br>программы</span>
+                            </button>
+                            <button class="faq-category nav-link " id="faq-tab-3" data-bs-toggle="tab" data-bs-target="#faq-panel-3" type="button" role="tab" aria-controls="faq-panel-3" aria-selected="false" tabindex="-1">
+                                <img class="faq-category__image" src="assets/img/faq-4.webp" width="64" height="64" alt="" loading="lazy" decoding="async">
+                                <span class="faq-category__label">Организация <br>обучения</span>
+                            </button>
+                        </div>
+                        <div class="tab-content faq__panels">
+                            <div class="tab-pane show active faq__panel" id="faq-panel-0" role="tabpanel" aria-labelledby="faq-tab-0" tabindex="0">
+                                <div class="faq__questions">
+                                    <details class="faq-item" open>
+                                        <summary class="faq-item__question">Кто может поступить в колледж?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Поступить на программы среднего профессионального образования могут выпускники 9-х и 11-х классов, имеющие соответствующий документ об образовании. Обучение по программам профессионального обучения доступно при наличии свидетельства об обучении.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Есть ли в колледжах бюджетные места?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Да, в колледжах предусмотрены бюджетные места. Их наличие и количество зависят от программы и колледжа. Проверьте план приёма на нужный учебный год на официальном сайте выбранного колледжа.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Какие документы необходимы для поступления?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Для поступления на СПО нужны паспорт и документ об образовании с приложением. Дополнительные документы зависят от программы и условий приёма: например, подтверждение льгот, индивидуальных достижений или медицинская справка. Актуальный перечень уточните в приёмной комиссии выбранного колледжа.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Как подать заявление на поступление?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Заявление в колледжи Москвы можно подать онлайн через городской сервис приёма. Перейдите к нему с официального портала колледжей Москвы и следуйте инструкции. Сроки подачи и дальнейшие действия уточняйте в правилах приёма выбранного колледжа.</p>
+                                        </div>
+                                    </details>
+                                </div>
+                                <a class="button faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+                            </div>
+                            <div class="tab-pane  faq__panel" id="faq-panel-1" role="tabpanel" aria-labelledby="faq-tab-1" tabindex="0">
+                                <div class="faq__questions">
+                                    <details class="faq-item" open>
+                                        <summary class="faq-item__question">Могут ли лица с инвалидностью и ОВЗ обучаться в колледже?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Да, лица с инвалидностью и ограниченными возможностями здоровья имеют право на получение среднего профессионального образования и профессионального обучения. Колледжи создают необходимые специальные условия с учетом индивидуальных особенностей и образовательных потребностей обучающихся.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Какие специальные условия обучения предусмотрены для студентов с ОВЗ и инвалидностью?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Специальные условия определяются с учётом индивидуальных образовательных потребностей. Они могут включать адаптированную программу, специальные учебные материалы и технические средства, помощь ассистента, переводчика и психолого-педагогическую поддержку. Нужные условия заранее обсудите с колледжем.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Нужно ли предоставлять заключение ЦПМПК при поступлении?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Заключение ЦПМПК содержит рекомендации о специальных условиях обучения. Если такие условия нужны, заранее уточните в приёмной комиссии, нужно ли представить заключение для выбранной программы и какие ещё документы потребуются.</p>
+                                        </div>
+                                    </details>
+                                </div>
+                                <a class="button faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+                            </div>
+                            <div class="tab-pane  faq__panel" id="faq-panel-2" role="tabpanel" aria-labelledby="faq-tab-2" tabindex="0">
+                                <div class="faq__questions">
+                                    <details class="faq-item" open>
+                                        <summary class="faq-item__question">Чем отличается среднее профессиональное образование (СПО) от профессионального обучения (ПО)?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Среднее профессиональное образование позволяет получить профессию или специальность и соответствующий уровень образования. Профессиональное обучение направлено на приобретение конкретной рабочей профессии или должности служащего без изменения уровня образования.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Можно ли поступить на профессиональное обучение без аттестата?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Для некоторых категорий поступающих предусмотрены программы профессионального обучения без аттестата. Например, проект «Профессиональное обучение без границ» предусматривает обучение лиц с ОВЗ, не имеющих основного общего или среднего общего образования. Подходящую программу и требования к документам уточните в колледже.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Какой документ выдается после окончания обучения?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>После успешного завершения СПО и итоговой аттестации выдают диплом о среднем профессиональном образовании. После профессионального обучения и успешной сдачи квалификационного экзамена — свидетельство о профессии рабочего или должности служащего. Это разные образовательные маршруты.</p>
+                                        </div>
+                                    </details>
+                                </div>
+                                <a class="button faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+                            </div>
+                            <div class="tab-pane  faq__panel" id="faq-panel-3" role="tabpanel" aria-labelledby="faq-tab-3" tabindex="0">
+                                <div class="faq__questions">
+                                    <details class="faq-item" open>
+                                        <summary class="faq-item__question">Как организована практика во время обучения?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Практическая подготовка проводится в учебных мастерских, лабораториях колледжей и на площадках организаций-партнеров. При необходимости создаются специальные условия с учетом индивидуальных особенностей обучающихся с инвалидностью и ОВЗ.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Сколько длится обучение в колледже?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Единого срока для всех программ нет. Продолжительность зависит от профессии или специальности, базы поступления и формы обучения. Точный срок указан в описании выбранной программы и в плане приёма колледжа.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Предусмотрено ли сопровождение студентов с инвалидностью и ОВЗ во время обучения?<span class="faq-item__indicator" aria-hidden="true"></span></summary>
+                                        <div class="faq-item__answer">
+                                            <p>Сопровождение организуется с учётом индивидуальных потребностей студента и рекомендаций специалистов. Его состав и порядок получения нужно согласовать с колледжем. За консультацией по сопровождению обучения можно обратиться в РУМЦ СПО.</p>
+                                        </div>
+                                    </details>
+                                    <details class="faq-item">
+                                        <summary class="faq-item__question">Помогают ли колледжи с трудоустройством после окончания обучения?<span class="faq-item__indicator" aria-hidden="true"></span> </summary>
+                                        <div class="faq-item__answer">
+                                            <p>В колледжах могут работать центры содействия трудоустройству: они помогают искать вакансии, готовить резюме и проходить собеседования. Узнайте в своём колледже, какие услуги доступны выпускникам с инвалидностью и ОВЗ. За консультацией по трудоустройству можно обратиться и в РУМЦ СПО.</p>
+                                        </div>
+                                    </details>
+                                </div>
+                                <a class="button faq__button" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20об%20обучении">Задать свой вопрос<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section consultation" aria-labelledby="consultation-title">
+                    <div class="consultation__content">
+                        <h2 class="section__title" id="consultation-title">Запись на консультацию</h2>
+                        <p class="consultation__description">Поможем подобрать колледж, программу и ответим на все ваши вопросы</p>
+                        <ul class="consultation__benefits">
+                            <li class="consultation__benefit"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Подберём колледж и программу с учётом ваших интересов </li>
+                            <li class="consultation__benefit"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Ответим на вопросы о поступлении, обучении и документах </li>
+                            <li class="consultation__benefit"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Согласуем удобное время консультации </li>
+                        </ul>
+                        <a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=Запись%20на%20консультацию">Записаться на консультацию</a>
+                    </div>
+                    <img class="consultation__image" src="assets/img/consultation-1.webp" width="650" height="449" alt="" loading="lazy" decoding="async">
+                </section>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container site-footer__inner">
+                <div class="site-footer__brand">
+                    <a class="brand" href="index.html">Инклюзия</a>
+                    <div class="site-footer__socials" aria-label="Социальные сети">
+                        <a class="round-link" role="link" aria-disabled="true"  aria-label="Telegram">
+                            <img alt="" src="assets/img/Telegram.svg">
+                        </a>
+                        <a class="round-link" role="link" aria-disabled="true" aria-label="ВКонтакте">
+                            <img alt="" src="assets/img/VK.svg">
+                        </a>
+                        <a class="round-link" role="link" aria-disabled="true"  aria-label="Макс">
+                            <img alt="" src="assets/img/Messenger.svg">
+                        </a>
+                    </div>
+                    <a class="site-footer__privacy" role="link" aria-disabled="true" data-page="privacy.html">Политика обработки данных</a>
+                </div>
+                <nav class="site-footer__nav" aria-label="Навигация в подвале">
+                    <ul class="site-footer__list">
+                        <li>
+                            <a class="site-footer__link" href="index.html" aria-current="page">Главная</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="colleges.html">Колледжи</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="applicants.html">Абитуриентам</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="support.html">РУМЦ СПО и БПОО</a>
+                        </li>
+                    </ul>
+                    <ul class="site-footer__list">
+                        <li>
+                            <a class="site-footer__link" href="events.html">Проекты и события</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="#documents">Документы</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="#faq">Вопросы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="site-footer__contacts">
+                    <p class="site-footer__caption">Общие контакты</p>
+                    <a href="mailto:info@mgpu.ru">info@mgpu.ru</a>
+                    <a href="tel:+74951981588">+7 (495) 198-15-88</a>
+                    <p>107143, г. Москва, ул. Бакунинская, 55 с 4</p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>

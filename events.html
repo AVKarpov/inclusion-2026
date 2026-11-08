@@ -1,111 +1,557 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Проекты, конкурсы и архив событий в сфере инклюзивного профессионального образования.">
-    <meta name="theme-color" content="#2d5b58">
-    <title>Проекты и события — Инклюзия</title>
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/inter-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20261101">
-    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-    <link rel="stylesheet" href="assets/css/pages.css?v=20261101">
-    <script src="assets/js/pages.js" defer></script>
-</head>
-<body>
-<a class="skip-link" href="#main">Перейти к содержанию</a>
-<header class="site-header">
-    <nav class="navbar navbar-expand-xl site-header__nav" aria-label="Основная навигация">
-        <div class="container">
-            <a class="brand" href="index.html" aria-label="Инклюзия — главная">Инклюзия</a>
-            <button class="navbar-toggler site-header__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
-            <div class="collapse navbar-collapse site-header__collapse" id="main-nav">
-                <ul class="navbar-nav site-header__menu">
-                    <li class="nav-item"><a class="nav-link site-header__link" href="index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="colleges.html">Колледжи</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="applicants.html">Абитуриентам</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="support.html">РУМЦ СПО и БПОО</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="events.html" aria-current="page">Проекты и события</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="contacts.html">Контакты</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="index.html#documents">Документы</a></li>
-                    <li class="nav-item"><a class="nav-link site-header__link" href="index.html#faq">Вопросы</a></li>
-                </ul>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Проекты, конкурсы и архив событий в сфере инклюзивного профессионального образования.">
+        <meta name="theme-color" content="#2d5b58">
+        <title>Проекты и события — Инклюзия</title>
+        <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+        <link rel="preload" href="assets/fonts/inter-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/style.css?v=20261102">
+        <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+        <script src="assets/js/main.js" defer></script>
+        <script src="assets/js/pages.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Перейти к содержанию</a>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-xl site-header__nav" aria-label="Основная навигация">
+                <div class="container">
+                    <a class="brand" href="index.html" aria-label="Инклюзия — главная">Инклюзия</a>
+                    <button class="navbar-toggler site-header__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="collapse navbar-collapse site-header__collapse" id="main-nav">
+                        <ul class="navbar-nav site-header__menu">
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="colleges.html">Колледжи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="applicants.html">Абитуриентам</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="support.html">РУМЦ СПО и БПОО</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="events.html" aria-current="page">Проекты и события</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="contacts.html">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="index.html#documents">Документы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link site-header__link" href="index.html#faq">Вопросы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="page page--inner" id="main" tabindex="-1">
+            <div class="container">
+                <section class="page-hero page-hero--events" aria-labelledby="page-title">
+                    <div class="page-hero__content">
+                        <h1 class="page-hero__title" id="page-title">Проекты<br>и события</h1>
+                        <p class="page-hero__description">Проекты, конкурсы, дни открытых дверей и другие мероприятия в сфере инклюзивного профессионального образования.</p>
+                        <div class="page-hero__actions">
+                            <a class="button button--primary" href="#projects">Выбрать проект</a>
+                            <a class="button button--secondary" href="#events">Найти событие</a>
+                        </div>
+                    </div>
+                    <img class="page-hero__image" src="assets/img/events-hero.webp" width="800" height="440" alt="" fetchpriority="high" decoding="async">
+                </section>
+                <section class="section project-browser" id="projects" aria-labelledby="projects-title">
+                    <div class="project-browser__sidebar">
+                        <h2 id="projects-title">Наши проекты</h2>
+                        <div class="nav project-browser__tabs" role="tablist" aria-label="Наши проекты" aria-orientation="vertical" data-tablist>
+                            <button class="button button--secondary project-browser__tab active" type="button" role="tab" id="project-tab-bilet" data-bs-toggle="tab" data-bs-target="#project-bilet" aria-controls="project-bilet" aria-selected="true" tabindex="0">Билет в будущее</button>
+                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-masterstvo" data-bs-toggle="tab" data-bs-target="#project-masterstvo" aria-controls="project-masterstvo" aria-selected="false" tabindex="-1">Мастерство начинается здесь</button>
+                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-skills" data-bs-toggle="tab" data-bs-target="#project-skills" aria-controls="project-skills" aria-selected="false" tabindex="-1">Навыки умелых</button>
+                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-craft" data-bs-toggle="tab" data-bs-target="#project-craft" aria-controls="project-craft" aria-selected="false" tabindex="-1">Особое ремесло</button>
+                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-abilympics" data-bs-toggle="tab" data-bs-target="#project-abilympics" aria-controls="project-abilympics" aria-selected="false" tabindex="-1">Абилимпикс</button>
+                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-open-days" data-bs-toggle="tab" data-bs-target="#project-open-days" aria-controls="project-open-days" aria-selected="false" tabindex="-1">Дни открытых дверей</button>
+                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-training" data-bs-toggle="tab" data-bs-target="#project-training" aria-controls="project-training" aria-selected="false" tabindex="-1">Профессиональное обучение без границ</button>
+                            <button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-other" data-bs-toggle="tab" data-bs-target="#project-other" aria-controls="project-other" aria-selected="false" tabindex="-1">Вопросы о проектах</button>
+                        </div>
+                    </div>
+                    <div class="tab-content project-browser__panels">
+                        <div class="tab-pane project-panel show active" id="project-bilet" role="tabpanel" aria-labelledby="project-tab-bilet" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-bilet.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Билет в будущее</h3>
+                            <p>Профориентационный проект помогает школьникам познакомиться с профессиями, пройти диагностику интересов и осознанно выбрать дальнейший профессиональный путь.</p>
+                            <a class="button button--secondary" href="https://bvbinfo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
+                        </div>
+                        <div class="tab-pane project-panel" id="project-masterstvo" role="tabpanel" aria-labelledby="project-tab-masterstvo" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-masterstvo.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Мастерство начинается здесь</h3>
+                            <p>Городской профориентационный проект для школьников 9 классов. Помогает познакомиться с востребованными профессиями, колледжами Москвы и рынком труда столицы.</p>
+                            <a class="button button--secondary" href="https://colleges.shkolamoskva.ru/proftest" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
+                        </div>
+                        <div class="tab-pane project-panel" id="project-skills" role="tabpanel" aria-labelledby="project-tab-skills" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-skills.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Навыки умелых</h3>
+                            <p>Конкурс профессионального мастерства для школьников и студентов колледжей с особенностями интеллектуального развития. Помогает освоить практические навыки и определиться с будущей профессией.</p>
+                            <a class="button button--secondary" href="https://skilledskills.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
+                        </div>
+                        <div class="tab-pane project-panel" id="project-craft" role="tabpanel" aria-labelledby="project-tab-craft" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-craft.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Особое ремесло</h3>
+                            <p>Подробнее об «Особом ремесле» можно узнать на сайте проекта. По вопросам участия обратитесь к специалистам через форму обратной связи.</p>
+                            <a class="button button--secondary" href="https://osoboeremeslo.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
+                        </div>
+                        <div class="tab-pane project-panel" id="project-abilympics" role="tabpanel" aria-labelledby="project-tab-abilympics" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-abilympics.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Абилимпикс</h3>
+                            <p>Чемпионат профессионального мастерства для людей с инвалидностью и ОВЗ. Поддерживает профессиональную ориентацию, получение образования и трудоустройство участников.</p>
+                            <a class="button button--secondary" href="https://abilympics.moscow/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
+                        </div>
+                        <div class="tab-pane project-panel" id="project-open-days" role="tabpanel" aria-labelledby="project-tab-open-days" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-open-days.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Дни открытых дверей</h3>
+                            <p>Перейдите на сайт дней открытых дверей, чтобы выбрать мероприятие и уточнить подробности посещения.</p>
+                            <a class="button button--secondary" href="https://dod.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
+                        </div>
+                        <div class="tab-pane project-panel" id="project-training" role="tabpanel" aria-labelledby="project-tab-training" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-training.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Профессиональное обучение без границ</h3>
+                            <p>Профессиональное обучение в мастерских и лабораториях колледжей. Программа завершается квалификационным экзаменом.</p>
+                            <a class="button button--secondary" href="https://pobg.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a>
+                        </div>
+                        <div class="tab-pane project-panel" id="project-other" role="tabpanel" aria-labelledby="project-tab-other" tabindex="0">
+                            <img class="project-panel__image" src="assets/img/project-other.webp" width="882" height="470" alt="" loading="lazy" decoding="async">
+                            <h3>Не нашли нужный проект?</h3>
+                            <p>Напишите, какой проект вас интересует. Специалисты помогут сориентироваться и ответят на вопросы.</p>
+                            <a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D1%85">Задать вопрос</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section past-events" aria-labelledby="past-events-title">
+                    <div class="section-heading">
+                        <h2 class="section__title" id="past-events-title">Прошедшие события</h2>
+                        <div class="past-events__controls">
+                            <button class="round-link past-events__previous" type="button" data-bs-target="#past-events-carousel" data-bs-slide="prev" aria-label="Предыдущее событие">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 12h16m-6-6 6 6-6 6"/>
+                                </svg>
+                            </button>
+                            <button class="round-link" type="button" data-bs-target="#past-events-carousel" data-bs-slide="next" aria-label="Следующее событие">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 12h16m-6-6 6 6-6 6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="past-events-carousel" class="carousel slide" data-bs-interval="false" aria-roledescription="карусель" aria-label="Прошедшие события">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" role="group" aria-roledescription="слайд" aria-label="1 из 2">
+                                <article class="featured-event">
+                                    <div>
+                                        <h3>Профессия — это про меня</h3>
+                                        <p class="featured-event__description">Интерактивный мастер-класс для школьников о выборе профессии и развитии навыков</p>
+                                        <ul class="event-meta">
+                                            <li>
+                                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                                    <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
+                                                </svg>
+                                                <time datetime="2026-09-28">28 сентября 2026</time>
+                                            </li>
+                                            <li>
+                                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="9"/>
+                                                    <path d="M12 7v5l3 2"/>
+                                                </svg>
+                                                <span>11:00–13:00</span>
+                                            </li>
+                                            <li>
+                                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                    <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/>
+                                                    <circle cx="12" cy="10" r="2.5"/>
+                                                </svg>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </li>
+                                        </ul>
+                                        <a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B8%3A%20%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D1%8F%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D0%BF%D1%80%D0%BE%20%D0%BC%D0%B5%D0%BD%D1%8F">Уточнить информацию</a>
+                                    </div>
+                                    <div class="featured-event__visual">
+                                        <img class="" src="assets/img/event-masterclass.webp" width="584" height="320" alt="" loading="lazy" decoding="async">
+                                        <span class="status-badge">Мастер-класс</span>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="carousel-item" role="group" aria-roledescription="слайд" aria-label="2 из 2">
+                                <article class="featured-event">
+                                    <div>
+                                        <h3>Инклюзивное образование: новые возможности</h3>
+                                        <p class="featured-event__description">Обсуждение подходов к инклюзивному образованию и поддержке молодёжи.</p>
+                                        <ul class="event-meta">
+                                            <li>
+                                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                                    <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
+                                                </svg>
+                                                <time datetime="2026-09-28">28 сентября 2026</time>
+                                            </li>
+                                            <li>
+                                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="9"/>
+                                                    <path d="M12 7v5l3 2"/>
+                                                </svg>
+                                                <span>11:00–13:00</span>
+                                            </li>
+                                            <li>
+                                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                    <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/>
+                                                    <circle cx="12" cy="10" r="2.5"/>
+                                                </svg>
+                                                <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                            </li>
+                                        </ul>
+                                        <a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B8%3A%20%D0%98%D0%BD%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%3A%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Уточнить информацию</a>
+                                    </div>
+                                    <div class="featured-event__visual">
+                                        <img class="" src="assets/img/event-conference.webp" width="584" height="320" alt="" loading="lazy" decoding="async">
+                                        <span class="status-badge">Конференция</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="visually-hidden" id="carousel-status" aria-live="polite">Событие 1 из 2</p>
+                </section>
+                <section class="section event-directory" id="events" aria-labelledby="events-title">
+                    <h2 class="section__title" id="events-title">События и архив</h2>
+                    <form class="event-filters surface-panel" id="event-filters">
+                        <div class="event-filters__heading">
+                            <h3>Фильтры поиска</h3>
+                            <button class="text-button" type="reset">Сбросить</button>
+                        </div>
+                        <div class="event-filters__fields">
+                            <label class="form-field" for="event-type">
+                                <span>Тип мероприятия</span>
+                                <select id="event-type" name="type">
+                                    <option value="">Любой тип</option>
+                                    <option value="conference">Конференция</option>
+                                    <option value="masterclass">Мастер-класс</option>
+                                    <option value="webinar">Вебинар</option>
+                                </select>
+                            </label>
+                            <label class="form-field" for="event-format">
+                                <span>Формат</span>
+                                <select id="event-format" name="format">
+                                    <option value="">Любой формат</option>
+                                    <option value="offline">Очно</option>
+                                    <option value="online">Онлайн</option>
+                                    <option value="unspecified">Не указан</option>
+                                </select>
+                            </label>
+                            <label class="form-field" for="event-date">
+                                <span>Дата</span>
+                                <select id="event-date" name="date">
+                                    <option value="">Любая дата</option>
+                                    <option value="2026-09">Сентябрь 2026</option>
+                                    <option value="2026-10">Октябрь 2026</option>
+                                </select>
+                            </label>
+                            <button class="button button--primary" type="submit">Применить фильтры</button>
+                            <a class="button button--secondary" href="https://yandex.ru/maps/?text=107143%2C%20%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B5%D1%80%D0%B1%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%20%D0%B4.%207" target="_blank" rel="noopener noreferrer">Показать на карте</a>
+                        </div>
+                    </form>
+                    <p class="event-directory__count" role="status">Показано событий: <strong id="event-count">4</strong></p>
+                    <div class="event-directory__cards">
+                        <article class="event-card" data-event-type="conference" data-event-format="unspecified" data-event-date="2026-09">
+                            <div class="event-card__visual">
+                                <img class="" src="assets/img/event-conference.webp" width="164" height="116" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="event-card__content">
+                                <h3>Инклюзивное образование: новые возможности</h3>
+                                <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
+                                <p class="event-card__type">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
+                                    </svg>
+                                    <span>Конференция</span>
+                                </p>
+                                <ul class="event-meta event-meta--inline">
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
+                                        </svg>
+                                        <time datetime="2026-09-28">28 сентября 2026</time>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="9"/>
+                                            <path d="M12 7v5l3 2"/>
+                                        </svg>
+                                        <span>11:00–13:00</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="2.5"/>
+                                        </svg>
+                                        <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button>
+                        </article>
+                        <article class="event-card" data-event-type="conference" data-event-format="unspecified" data-event-date="2026-09">
+                            <div class="event-card__visual">
+                                <img class="" src="assets/img/event-conference.webp" width="164" height="116" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="event-card__content">
+                                <h3>Инклюзивное образование: новые возможности</h3>
+                                <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
+                                <p class="event-card__type">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
+                                    </svg>
+                                    <span>Конференция</span>
+                                </p>
+                                <ul class="event-meta event-meta--inline">
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
+                                        </svg>
+                                        <time datetime="2026-09-28">28 сентября 2026</time>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="9"/>
+                                            <path d="M12 7v5l3 2"/>
+                                        </svg>
+                                        <span>11:00–13:00</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="2.5"/>
+                                        </svg>
+                                        <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button>
+                        </article>
+                        <article class="event-card" data-event-type="masterclass" data-event-format="unspecified" data-event-date="2026-09">
+                            <div class="event-card__visual">
+                                <img class="" src="assets/img/event-workshop.webp" width="164" height="116" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="event-card__content">
+                                <h3>Инклюзивное образование: новые возможности</h3>
+                                <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
+                                <p class="event-card__type">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
+                                    </svg>
+                                    <span>Мастер-класс</span>
+                                </p>
+                                <ul class="event-meta event-meta--inline">
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
+                                        </svg>
+                                        <time datetime="2026-09-28">28 сентября 2026</time>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="9"/>
+                                            <path d="M12 7v5l3 2"/>
+                                        </svg>
+                                        <span>11:00–13:00</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="2.5"/>
+                                        </svg>
+                                        <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button>
+                        </article>
+                        <article class="event-card" data-event-type="masterclass" data-event-format="unspecified" data-event-date="2026-09">
+                            <div class="event-card__visual">
+                                <img class="" src="assets/img/event-workshop.webp" width="164" height="116" alt="" loading="lazy" decoding="async">
+                            </div>
+                            <div class="event-card__content">
+                                <h3>Инклюзивное образование: новые возможности</h3>
+                                <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
+                                <p class="event-card__type">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/>
+                                    </svg>
+                                    <span>Мастер-класс</span>
+                                </p>
+                                <ul class="event-meta event-meta--inline">
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                            <path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/>
+                                        </svg>
+                                        <time datetime="2026-09-28">28 сентября 2026</time>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="9"/>
+                                            <path d="M12 7v5l3 2"/>
+                                        </svg>
+                                        <span>11:00–13:00</span>
+                                    </li>
+                                    <li>
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="2.5"/>
+                                        </svg>
+                                        <span>107143, г. Москва, Вербная улица, д. 7</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button>
+                        </article>
+                    </div>
+                    <div class="event-empty surface-panel" id="event-empty" hidden>
+                        <h3>События не найдены</h3>
+                        <p>Измените параметры поиска или сбросьте фильтры.</p>
+                        <button class="button button--secondary" id="event-reset" type="button">Сбросить фильтры</button>
+                    </div>
+                </section>
+                <section class="section help-panel" aria-labelledby="help-title">
+                    <div class="help-panel__intro">
+                        <h2 id="help-title">Не нашли ответ<br>на свой вопрос?</h2>
+                        <p>Наши специалисты помогут вам разобраться и ответят на все вопросы.</p>
+                        <a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%B0%D0%BC">Задать вопрос</a>
+                    </div>
+                    <img class="help-panel__image" src="assets/img/help-illustration.webp" width="337" height="225" alt="" loading="lazy" decoding="async">
+                    <div class="help-panel__contacts">
+                        <h3>Консультации</h3>
+                        <div class="contact-item">
+                            <span class="icon-box">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="7" r="4"/>
+                                    <path d="M4 21v-3a8 8 0 0 1 16 0v3"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="contact-item__title">Ольга Олеговна Унгурян</p>
+                                <p class="contact-item__description">Начальник отдела региональных и федеральных образовательных проектов</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon-box">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                    <path d="m3 6 9 7 9-7"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <a class="contact-item__title" href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a>
+                                <p class="contact-item__description">Вопросы о выборе колледжа, поступлении и условиях обучения</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="modal fade info-modal" id="event-details" tabindex="-1" aria-labelledby="event-details-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="event-details-title">Инклюзивное образование: новые возможности</h2>
+                        <button class="info-modal__close" type="button" data-bs-dismiss="modal" aria-label="Закрыть окно">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p>
+                        <p id="event-detail-type">Конференция</p>
+                        <p>
+                            <time datetime="2026-09-28">28 сентября 2026</time>
+                        </p>
+                        <p>11:00–13:00</p>
+                        <p>107143, г. Москва, Вербная улица, д. 7</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=%D0%98%D0%BD%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%3A%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Задать вопрос</a>
+                        <button class="button button--secondary" type="button" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
-
-<main class="page page--inner" id="main" tabindex="-1">
-<div class="container">
-<section class="page-hero page-hero--events" aria-labelledby="page-title">
-  <div class="page-hero__content">
-    <h1 class="page-hero__title" id="page-title">Проекты<br>и события</h1>
-    
-    <p class="page-hero__description">Проекты, конкурсы, дни открытых дверей и другие мероприятия в сфере инклюзивного профессионального образования.</p>
-    <div class="page-hero__actions"><a class="button button--primary" href="#projects">Выбрать проект</a><a class="button button--secondary" href="#events">Найти событие</a></div>
-  </div>
-  <img class="page-hero__image" src="assets/img/events-hero.webp" width="800" height="440" alt="" fetchpriority="high" decoding="async">
-</section><section class="section project-browser" id="projects" aria-labelledby="projects-title"><div class="project-browser__sidebar"><h2 id="projects-title">Наши проекты</h2><div class="nav project-browser__tabs" role="tablist" aria-label="Наши проекты" aria-orientation="vertical" data-tablist>
-<button class="button button--secondary project-browser__tab active" type="button" role="tab" id="project-tab-bilet" data-bs-toggle="tab" data-bs-target="#project-bilet" aria-controls="project-bilet" aria-selected="true" tabindex="0">Билет в будущее</button>
-<button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-masterstvo" data-bs-toggle="tab" data-bs-target="#project-masterstvo" aria-controls="project-masterstvo" aria-selected="false" tabindex="-1">Мастерство начинается здесь</button>
-<button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-skills" data-bs-toggle="tab" data-bs-target="#project-skills" aria-controls="project-skills" aria-selected="false" tabindex="-1">Навыки умелых</button>
-<button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-craft" data-bs-toggle="tab" data-bs-target="#project-craft" aria-controls="project-craft" aria-selected="false" tabindex="-1">Особое ремесло</button>
-<button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-abilympics" data-bs-toggle="tab" data-bs-target="#project-abilympics" aria-controls="project-abilympics" aria-selected="false" tabindex="-1">Абилимпикс</button>
-<button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-open-days" data-bs-toggle="tab" data-bs-target="#project-open-days" aria-controls="project-open-days" aria-selected="false" tabindex="-1">Дни открытых дверей</button>
-<button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-training" data-bs-toggle="tab" data-bs-target="#project-training" aria-controls="project-training" aria-selected="false" tabindex="-1">Профессиональное обучение без границ</button>
-<button class="button button--secondary project-browser__tab" type="button" role="tab" id="project-tab-other" data-bs-toggle="tab" data-bs-target="#project-other" aria-controls="project-other" aria-selected="false" tabindex="-1">Вопросы о проектах</button>
-</div></div><div class="tab-content project-browser__panels">
-<div class="tab-pane project-panel show active" id="project-bilet" role="tabpanel" aria-labelledby="project-tab-bilet" tabindex="0"><img class="project-panel__image" src="assets/img/project-bilet.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Билет в будущее</h3><p>Профориентационный проект помогает школьникам познакомиться с профессиями, пройти диагностику интересов и осознанно выбрать дальнейший профессиональный путь.</p><a class="button button--secondary" href="https://bvbinfo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a></div>
-<div class="tab-pane project-panel" id="project-masterstvo" role="tabpanel" aria-labelledby="project-tab-masterstvo" tabindex="0"><img class="project-panel__image" src="assets/img/project-masterstvo.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Мастерство начинается здесь</h3><p>Городской профориентационный проект для школьников 9 классов. Помогает познакомиться с востребованными профессиями, колледжами Москвы и рынком труда столицы.</p><a class="button button--secondary" href="https://colleges.shkolamoskva.ru/proftest" target="_blank" rel="noopener noreferrer">Сайт проекта</a></div>
-<div class="tab-pane project-panel" id="project-skills" role="tabpanel" aria-labelledby="project-tab-skills" tabindex="0"><img class="project-panel__image" src="assets/img/project-skills.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Навыки умелых</h3><p>Конкурс профессионального мастерства для школьников и студентов колледжей с особенностями интеллектуального развития. Помогает освоить практические навыки и определиться с будущей профессией.</p><a class="button button--secondary" href="https://skilledskills.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a></div>
-<div class="tab-pane project-panel" id="project-craft" role="tabpanel" aria-labelledby="project-tab-craft" tabindex="0"><img class="project-panel__image" src="assets/img/project-craft.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Особое ремесло</h3><p>Подробнее об «Особом ремесле» можно узнать на сайте проекта. По вопросам участия обратитесь к специалистам через форму обратной связи.</p><a class="button button--secondary" href="https://osoboeremeslo.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a></div>
-<div class="tab-pane project-panel" id="project-abilympics" role="tabpanel" aria-labelledby="project-tab-abilympics" tabindex="0"><img class="project-panel__image" src="assets/img/project-abilympics.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Абилимпикс</h3><p>Чемпионат профессионального мастерства для людей с инвалидностью и ОВЗ. Поддерживает профессиональную ориентацию, получение образования и трудоустройство участников.</p><a class="button button--secondary" href="https://abilympics.moscow/" target="_blank" rel="noopener noreferrer">Сайт проекта</a></div>
-<div class="tab-pane project-panel" id="project-open-days" role="tabpanel" aria-labelledby="project-tab-open-days" tabindex="0"><img class="project-panel__image" src="assets/img/project-open-days.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Дни открытых дверей</h3><p>Перейдите на сайт дней открытых дверей, чтобы выбрать мероприятие и уточнить подробности посещения.</p><a class="button button--secondary" href="https://dod.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a></div>
-<div class="tab-pane project-panel" id="project-training" role="tabpanel" aria-labelledby="project-tab-training" tabindex="0"><img class="project-panel__image" src="assets/img/project-training.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Профессиональное обучение без границ</h3><p>Профессиональное обучение в мастерских и лабораториях колледжей. Программа завершается квалификационным экзаменом.</p><a class="button button--secondary" href="https://pobg.mcrpo.ru/" target="_blank" rel="noopener noreferrer">Сайт проекта</a></div>
-<div class="tab-pane project-panel" id="project-other" role="tabpanel" aria-labelledby="project-tab-other" tabindex="0"><img class="project-panel__image" src="assets/img/project-other.webp" width="882" height="470" alt="" loading="lazy" decoding="async"><h3>Не нашли нужный проект?</h3><p>Напишите, какой проект вас интересует. Специалисты помогут сориентироваться и ответят на вопросы.</p><a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D1%85">Задать вопрос</a></div>
-</div></section>
-<section class="section past-events" aria-labelledby="past-events-title"><div class="section-heading"><h2 class="section__title" id="past-events-title">Прошедшие события</h2><div class="past-events__controls"><button class="round-link past-events__previous" type="button" data-bs-target="#past-events-carousel" data-bs-slide="prev" aria-label="Предыдущее событие"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button class="round-link" type="button" data-bs-target="#past-events-carousel" data-bs-slide="next" aria-label="Следующее событие"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div></div><div id="past-events-carousel" class="carousel slide" data-bs-interval="false" aria-roledescription="карусель" aria-label="Прошедшие события"><div class="carousel-inner">
-<div class="carousel-item active" role="group" aria-roledescription="слайд" aria-label="1 из 2"><article class="featured-event"><div><h3>Профессия — это про меня</h3><p class="featured-event__description">Интерактивный мастер-класс для школьников о выборе профессии и развитии навыков</p><ul class="event-meta"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><time datetime="2026-09-28">28 сентября 2026</time></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>11:00–13:00</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>107143, г. Москва, Вербная улица, д. 7</span></li></ul><a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B8%3A%20%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D1%8F%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D0%BF%D1%80%D0%BE%20%D0%BC%D0%B5%D0%BD%D1%8F">Уточнить информацию</a></div><div class="featured-event__visual"><img class="" src="assets/img/event-masterclass.webp" width="584" height="320" alt="" loading="lazy" decoding="async"><span class="status-badge">Мастер-класс</span></div></article></div>
-<div class="carousel-item" role="group" aria-roledescription="слайд" aria-label="2 из 2"><article class="featured-event"><div><h3>Инклюзивное образование: новые возможности</h3><p class="featured-event__description">Обсуждение подходов к инклюзивному образованию и поддержке молодёжи.</p><ul class="event-meta"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><time datetime="2026-09-28">28 сентября 2026</time></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>11:00–13:00</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>107143, г. Москва, Вербная улица, д. 7</span></li></ul><a class="button button--secondary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BE%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B8%3A%20%D0%98%D0%BD%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%3A%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Уточнить информацию</a></div><div class="featured-event__visual"><img class="" src="assets/img/event-conference.webp" width="584" height="320" alt="" loading="lazy" decoding="async"><span class="status-badge">Конференция</span></div></article></div>
-</div></div><p class="visually-hidden" id="carousel-status" aria-live="polite">Событие 1 из 2</p></section>
-<section class="section event-directory" id="events" aria-labelledby="events-title"><h2 class="section__title" id="events-title">События и архив</h2>
-<form class="event-filters surface-panel" id="event-filters"><div class="event-filters__heading"><h3>Фильтры поиска</h3><button class="text-button" type="reset">Сбросить</button></div><div class="event-filters__fields">
-<label class="form-field" for="event-type"><span>Тип мероприятия</span><select id="event-type" name="type"><option value="">Любой тип</option><option value="conference">Конференция</option><option value="masterclass">Мастер-класс</option><option value="webinar">Вебинар</option></select></label>
-<label class="form-field" for="event-format"><span>Формат</span><select id="event-format" name="format"><option value="">Любой формат</option><option value="offline">Очно</option><option value="online">Онлайн</option><option value="unspecified">Не указан</option></select></label>
-<label class="form-field" for="event-date"><span>Дата</span><select id="event-date" name="date"><option value="">Любая дата</option><option value="2026-09">Сентябрь 2026</option><option value="2026-10">Октябрь 2026</option></select></label>
-<button class="button button--primary" type="submit">Применить фильтры</button><a class="button button--secondary" href="https://yandex.ru/maps/?text=107143%2C%20%D0%B3.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B5%D1%80%D0%B1%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%20%D0%B4.%207" target="_blank" rel="noopener noreferrer">Показать на карте</a></div></form>
-<p class="event-directory__count" role="status">Показано событий: <strong id="event-count">4</strong></p><div class="event-directory__cards">
-<article class="event-card" data-event-type="conference" data-event-format="unspecified" data-event-date="2026-09"><div class="event-card__visual"><img class="" src="assets/img/event-conference.webp" width="164" height="116" alt="" loading="lazy" decoding="async"></div><div class="event-card__content"><h3>Инклюзивное образование: новые возможности</h3><p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p><p class="event-card__type"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/></svg><span>Конференция</span></p><ul class="event-meta event-meta--inline"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><time datetime="2026-09-28">28 сентября 2026</time></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>11:00–13:00</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>107143, г. Москва, Вербная улица, д. 7</span></li></ul></div><button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button></article>
-<article class="event-card" data-event-type="conference" data-event-format="unspecified" data-event-date="2026-09"><div class="event-card__visual"><img class="" src="assets/img/event-conference.webp" width="164" height="116" alt="" loading="lazy" decoding="async"></div><div class="event-card__content"><h3>Инклюзивное образование: новые возможности</h3><p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p><p class="event-card__type"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/></svg><span>Конференция</span></p><ul class="event-meta event-meta--inline"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><time datetime="2026-09-28">28 сентября 2026</time></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>11:00–13:00</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>107143, г. Москва, Вербная улица, д. 7</span></li></ul></div><button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, конференция">Подробнее</button></article>
-<article class="event-card" data-event-type="masterclass" data-event-format="unspecified" data-event-date="2026-09"><div class="event-card__visual"><img class="" src="assets/img/event-workshop.webp" width="164" height="116" alt="" loading="lazy" decoding="async"></div><div class="event-card__content"><h3>Инклюзивное образование: новые возможности</h3><p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p><p class="event-card__type"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/></svg><span>Мастер-класс</span></p><ul class="event-meta event-meta--inline"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><time datetime="2026-09-28">28 сентября 2026</time></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>11:00–13:00</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>107143, г. Москва, Вербная улица, д. 7</span></li></ul></div><button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button></article>
-<article class="event-card" data-event-type="masterclass" data-event-format="unspecified" data-event-date="2026-09"><div class="event-card__visual"><img class="" src="assets/img/event-workshop.webp" width="164" height="116" alt="" loading="lazy" decoding="async"></div><div class="event-card__content"><h3>Инклюзивное образование: новые возможности</h3><p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p><p class="event-card__type"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/></svg><span>Мастер-класс</span></p><ul class="event-meta event-meta--inline"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><time datetime="2026-09-28">28 сентября 2026</time></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>11:00–13:00</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>107143, г. Москва, Вербная улица, д. 7</span></li></ul></div><button class="button button--secondary event-card__action" type="button" data-bs-toggle="modal" data-bs-target="#event-details" aria-label="Подробнее: Инклюзивное образование: новые возможности, мастер-класс">Подробнее</button></article>
-</div><div class="event-empty surface-panel" id="event-empty" hidden><h3>События не найдены</h3><p>Измените параметры поиска или сбросьте фильтры.</p><button class="button button--secondary" id="event-reset" type="button">Сбросить фильтры</button></div></section>
-<section class="section help-panel" aria-labelledby="help-title">
-  <div class="help-panel__intro"><h2 id="help-title">Не нашли ответ<br>на свой вопрос?</h2><p>Наши специалисты помогут вам разобраться и ответят на все вопросы.</p><a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%B0%D0%BC">Задать вопрос</a></div>
-  <img class="help-panel__image" src="assets/img/help-illustration.webp" width="337" height="225" alt="" loading="lazy" decoding="async">
-  <div class="help-panel__contacts"><h3>Консультации</h3>
-    <div class="contact-item"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-3a8 8 0 0 1 16 0v3"/></svg></span><div><p class="contact-item__title">Ольга Олеговна Унгурян</p><p class="contact-item__description">Начальник отдела региональных и федеральных образовательных проектов</p></div></div>
-    <div class="contact-item"><span class="icon-box"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span><div><a class="contact-item__title" href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a><p class="contact-item__description">Вопросы о выборе колледжа, поступлении и условиях обучения</p></div></div>
-  </div>
-</section>
-</div>
-</main>
-<div class="modal fade info-modal" id="event-details" tabindex="-1" aria-labelledby="event-details-title" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
-    <div class="modal-header"><h2 class="modal-title" id="event-details-title">Инклюзивное образование: новые возможности</h2><button class="info-modal__close" type="button" data-bs-dismiss="modal" aria-label="Закрыть окно">×</button></div>
-    <div class="modal-body"><p>Обсуждаем современные подходы и инструменты инклюзивного образования и поддержки молодежи.</p><p id="event-detail-type">Конференция</p><p><time datetime="2026-09-28">28 сентября 2026</time></p><p>11:00–13:00</p><p>107143, г. Москва, Вербная улица, д. 7</p></div>
-    <div class="modal-footer"><a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=%D0%98%D0%BD%D0%BA%D0%BB%D1%8E%D0%B7%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%3A%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Задать вопрос</a><button class="button button--secondary" type="button" data-bs-dismiss="modal">Закрыть</button></div>
-  </div></div>
-</div>
-<footer class="site-footer"><div class="container site-footer__inner"><div class="site-footer__brand"><a class="brand" href="index.html">Инклюзия</a><div class="site-footer__socials" aria-label="Социальные сети">
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 3-5 18-6-6-5 3 1-7-4-3 19-5Zm-15 8L21 3 10 15"/></svg></a>
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="ВКонтакте"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5c0 8 4 14 10 14v-5c3 0 5 3 6 5h3c-1-4-4-6-6-7 2-2 4-4 5-7h-4c-1 3-3 6-4 6V5H9v8C6 10 6 7 6 5Z"/></svg></a>
-<a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Мессенджер"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11a9 9 0 0 1-9 9 10 10 0 0 1-4-1l-5 2 1-5a9 9 0 1 1 17-5Z"/></svg></a>
-</div><a class="site-footer__privacy" role="link" aria-disabled="true" data-page="privacy.html">Политика обработки данных</a></div><nav class="site-footer__nav" aria-label="Навигация в подвале">
-<ul class="site-footer__list"><li><a class="site-footer__link" href="index.html">Главная</a></li><li><a class="site-footer__link" href="colleges.html">Колледжи</a></li><li><a class="site-footer__link" href="applicants.html">Абитуриентам</a></li><li><a class="site-footer__link" href="support.html">РУМЦ СПО и БПОО</a></li></ul>
-<ul class="site-footer__list"><li><a class="site-footer__link" href="events.html" aria-current="page">Проекты и события</a></li><li><a class="site-footer__link" href="index.html#documents">Документы</a></li><li><a class="site-footer__link" href="contacts.html">Контакты</a></li><li><a class="site-footer__link" href="index.html#faq">Вопросы</a></li></ul>
-</nav><address class="site-footer__contacts"><p class="site-footer__caption">Общие контакты</p><a href="mailto:info@mgpu.ru">info@mgpu.ru</a><a href="tel:+74951981588">+7 (495) 198-15-88</a><p>107143, г. Москва,<br>ул. Бакунинская, 55 с 4</p></address></div></footer></body></html>
+        <footer class="site-footer">
+            <div class="container site-footer__inner">
+                <div class="site-footer__brand">
+                    <a class="brand" href="index.html">Инклюзия</a>
+                    <div class="site-footer__socials" aria-label="Социальные сети">
+                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Telegram">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="m21 3-5 18-6-6-5 3 1-7-4-3 19-5Zm-15 8L21 3 10 15"/>
+                            </svg>
+                        </a>
+                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="ВКонтакте">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 5c0 8 4 14 10 14v-5c3 0 5 3 6 5h3c-1-4-4-6-6-7 2-2 4-4 5-7h-4c-1 3-3 6-4 6V5H9v8C6 10 6 7 6 5Z"/>
+                            </svg>
+                        </a>
+                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Мессенджер">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 11a9 9 0 0 1-9 9 10 10 0 0 1-4-1l-5 2 1-5a9 9 0 1 1 17-5Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="site-footer__privacy" role="link" aria-disabled="true" data-page="privacy.html">Политика обработки данных</a>
+                </div>
+                <nav class="site-footer__nav" aria-label="Навигация в подвале">
+                    <ul class="site-footer__list">
+                        <li>
+                            <a class="site-footer__link" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="colleges.html">Колледжи</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="applicants.html">Абитуриентам</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="support.html">РУМЦ СПО и БПОО</a>
+                        </li>
+                    </ul>
+                    <ul class="site-footer__list">
+                        <li>
+                            <a class="site-footer__link" href="events.html" aria-current="page">Проекты и события</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="index.html#documents">Документы</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="site-footer__link" href="index.html#faq">Вопросы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="site-footer__contacts">
+                    <p class="site-footer__caption">Общие контакты</p>
+                    <a href="mailto:info@mgpu.ru">info@mgpu.ru</a>
+                    <a href="tel:+74951981588">+7 (495) 198-15-88</a>
+                    <p>107143, г. Москва,<br>ул. Бакунинская, 55 с 4</p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
