@@ -65,7 +65,7 @@
                         <p class="colleges-hero__description">Сравните колледжи Москвы: образовательные программы, условия поступления и возможности обучения для студентов с инвалидностью и ОВЗ.</p>
                         <div class="colleges-hero__actions">
                             <a class="button button--primary" href="#directory">Подобрать колледж</a>
-                            <button class="button button--secondary" id="toggle-images" type="button" aria-pressed="false">Убрать все изображения</button>
+                            <button class="button button--secondary button-hide-images" id="toggle-images" type="button" aria-pressed="false">Убрать все изображения</button>
                         </div>
                     </div>
                     <img class="colleges-hero__image" src="assets/img/colleges-hero.webp" width="743" height="422" alt="Доступное здание колледжа" fetchpriority="high">
@@ -95,7 +95,7 @@
                                         <option value="">Любая профессия</option>
                                     </select>
                                 </label>
-                                <fieldset class="filters__group">
+                                <fieldset class="filters__group filters__group--status">
                                     <legend>Статус (БПОО / РУМЦ)</legend>
                                     <label>
                                         <input type="checkbox" name="status" value="bpoo">
@@ -130,17 +130,17 @@
                                     </label>
                                 </fieldset>
                                 <button class="button button--primary filters__apply" type="submit">Применить фильтры</button>
-                                <a class="button button--secondary filters__map" href="https://yandex.ru/maps/?text=%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%B4%D0%B6%D0%B8%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B" target="_blank" rel="noopener noreferrer">Поиск на Яндекс Картах</a>
+                                <a class="button button--secondary filters__map" href="" target="_blank" rel="noopener noreferrer">Поиск на Яндекс Картах</a>
                                 <p class="filters__hint">Откроется поиск колледжей в Яндекс Картах. Фильтры каталога не передаются.</p>
                                 <div class="filters__legend">
                                     <h3>Что означает маркер доступности?</h3>
                                     <p>Мы отмечаем особенности доступной среды в колледжах, чтобы вам было проще выбрать подходящее место обучения.</p>
                                     <ul>
-                                        <li><span aria-hidden="true">◉</span> Для слабовидящих</li>
-                                        <li><span aria-hidden="true">◉</span> Для слабослышащих</li>
-                                        <li><span aria-hidden="true">♿</span> Для маломобильных</li>
-                                        <li><span aria-hidden="true">◇</span> Для студентов с РАС</li>
-                                        <li><span aria-hidden="true">✳</span> Сопровождение</li>
+                                        <li><span aria-hidden="true"><img alt="" src="assets/img/icon-eye-color.svg"></span> Для слабовидящих</li>
+                                        <li><span aria-hidden="true"><img alt="" src="assets/img/icon-ear-color.svg"></span> Для слабослышащих</li>
+                                        <li><span aria-hidden="true"><img alt="" src="assets/img/icon-dis-color.svg"></span> Для маломобильных</li>
+                                        <li><span aria-hidden="true"><img alt="" src="assets/img/icon-pac-color.svg"></span> Для студентов с РАС</li>
+                                        <li><span aria-hidden="true"><img alt="" src="assets/img/icon-p-color.svg"></span> Сопровождение</li>
                                     </ul>
                                 </div>
                                 <div class="filters__help">
@@ -159,7 +159,7 @@
                                         <div class="college-card__image-wrap">
                                             <img class="college-card__image" src="assets/img/college-1.webp" width="190" height="190" alt="Логотип: Московский образовательный комплекс имени Виктора Талалихина" loading="lazy">
                                         </div>
-                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="1" aria-label="Подробнее: Московский образовательный комплекс имени Виктора Талалихина">Подробнее</button>
+                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#example-college-modal" data-college="1" aria-label="Подробнее: Московский образовательный комплекс имени Виктора Талалихина">Подробнее</button>
                                     </div>
                                     <div class="college-card__info">
                                         <div>
@@ -174,11 +174,11 @@
                                             </div>
                                             <div class="college-card__bottom">
                                                 <div class="college-card__features" aria-label="Маркеры доступности">
-                                                    <span title="Для слабовидящих">◉</span>
-                                                    <span title="Для слабослышащих">◉</span>
-                                                    <span title="Для маломобильных">♿</span>
-                                                    <span title="Для студентов с РАС">◇</span>
-                                                    <span title="Сопровождение">✳</span>
+                                                    <span title="Для слабовидящих"><img alt="" src="assets/img/icon-eye.svg"></span>
+                                                    <span title="Для слабослышащих"><img alt="" src="assets/img/icon-ear.svg"></span>
+                                                    <span title="Для маломобильных"><img alt="" src="assets/img/icon-dis.svg"></span>
+                                                    <span title="Для студентов с РАС"><img alt="" src="assets/img/icon-pac.svg"></span>
+                                                    <span title="Сопровождение"><img alt="" src="assets/img/icon-p.svg"></span>
                                                 </div>
                                                 <div class="college-card__badges">
                                                     <span>БПОО</span>
@@ -193,7 +193,7 @@
                                         <div class="college-card__image-wrap">
                                             <img class="college-card__image" src="assets/img/college-2.webp" width="190" height="190" alt="Логотип: Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»" loading="lazy">
                                         </div>
-                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="2" aria-label="Подробнее: Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»">Подробнее</button>
+                                        <button class="button button--primary college-card__button" type="button" data-college="2" aria-label="Подробнее: Московский колледж управления, гостиничного бизнеса и информационных технологий «Царицыно»">Подробнее</button>
                                     </div>
                                     <div class="college-card__info">
                                         <div>
@@ -208,11 +208,11 @@
                                             </div>
                                             <div class="college-card__bottom">
                                                 <div class="college-card__features" aria-label="Маркеры доступности">
-                                                    <span title="Для слабовидящих">◉</span>
-                                                    <span title="Для слабослышащих">◉</span>
-                                                    <span title="Для маломобильных">♿</span>
-                                                    <span title="Для студентов с РАС">◇</span>
-                                                    <span title="Сопровождение">✳</span>
+                                                    <span title="Для слабовидящих"><img alt="" src="assets/img/icon-eye.svg"></span>
+                                                    <span title="Для слабослышащих"><img alt="" src="assets/img/icon-ear.svg"></span>
+                                                    <span title="Для маломобильных"><img alt="" src="assets/img/icon-dis.svg"></span>
+                                                    <span title="Для студентов с РАС"><img alt="" src="assets/img/icon-pac.svg"></span>
+                                                    <span title="Сопровождение"><img alt="" src="assets/img/icon-p.svg"></span>
                                                 </div>
                                                 <div class="college-card__badges">
                                                     <span>БПОО</span>
@@ -227,7 +227,7 @@
                                         <div class="college-card__image-wrap">
                                             <img class="college-card__image" src="assets/img/college-3.webp" width="190" height="190" alt="Логотип: Московский автомобильно-дорожный колледж имени А. А. Николаева" loading="lazy">
                                         </div>
-                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="3" aria-label="Подробнее: Московский автомобильно-дорожный колледж имени А. А. Николаева">Подробнее</button>
+                                        <button class="button button--primary college-card__button" type="button" data-college="3" aria-label="Подробнее: Московский автомобильно-дорожный колледж имени А. А. Николаева">Подробнее</button>
                                     </div>
                                     <div class="college-card__info">
                                         <div>
@@ -242,11 +242,11 @@
                                             </div>
                                             <div class="college-card__bottom">
                                                 <div class="college-card__features" aria-label="Маркеры доступности">
-                                                    <span title="Для слабовидящих">◉</span>
-                                                    <span title="Для слабослышащих">◉</span>
-                                                    <span title="Для маломобильных">♿</span>
-                                                    <span title="Для студентов с РАС">◇</span>
-                                                    <span title="Сопровождение">✳</span>
+                                                    <span title="Для слабовидящих"><img alt="" src="assets/img/icon-eye.svg"></span>
+                                                    <span title="Для слабослышащих"><img alt="" src="assets/img/icon-ear.svg"></span>
+                                                    <span title="Для маломобильных"><img alt="" src="assets/img/icon-dis.svg"></span>
+                                                    <span title="Для студентов с РАС"><img alt="" src="assets/img/icon-pac.svg"></span>
+                                                    <span title="Сопровождение"><img alt="" src="assets/img/icon-p.svg"></span>
                                                 </div>
                                                 <div class="college-card__badges">
                                                     <span>БПОО</span>
@@ -261,7 +261,7 @@
                                         <div class="college-card__image-wrap">
                                             <img class="college-card__image" src="assets/img/college-4.webp" width="190" height="190" alt="Логотип: Московский колледж архитектуры и градостроительства" loading="lazy">
                                         </div>
-                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="4" aria-label="Подробнее: Московский колледж архитектуры и градостроительства">Подробнее</button>
+                                        <button class="button button--primary college-card__button" type="button" data-college="4" aria-label="Подробнее: Московский колледж архитектуры и градостроительства">Подробнее</button>
                                     </div>
                                     <div class="college-card__info">
                                         <div>
@@ -276,11 +276,11 @@
                                             </div>
                                             <div class="college-card__bottom">
                                                 <div class="college-card__features" aria-label="Маркеры доступности">
-                                                    <span title="Для слабовидящих">◉</span>
-                                                    <span title="Для слабослышащих">◉</span>
-                                                    <span title="Для маломобильных">♿</span>
-                                                    <span title="Для студентов с РАС">◇</span>
-                                                    <span title="Сопровождение">✳</span>
+                                                    <span title="Для слабовидящих"><img alt="" src="assets/img/icon-eye.svg"></span>
+                                                    <span title="Для слабослышащих"><img alt="" src="assets/img/icon-ear.svg"></span>
+                                                    <span title="Для маломобильных"><img alt="" src="assets/img/icon-dis.svg"></span>
+                                                    <span title="Для студентов с РАС"><img alt="" src="assets/img/icon-pac.svg"></span>
+                                                    <span title="Сопровождение"><img alt="" src="assets/img/icon-p.svg"></span>
                                                 </div>
                                                 <div class="college-card__badges">
                                                     <span>БПОО</span>
@@ -295,7 +295,7 @@
                                         <div class="college-card__image-wrap">
                                             <img class="college-card__image" src="assets/img/college-5.webp" width="190" height="190" alt="Логотип: Московский городской педагогический университет" loading="lazy">
                                         </div>
-                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="5" aria-label="Подробнее: Московский городской педагогический университет">Подробнее</button>
+                                        <button class="button button--primary college-card__button" type="button" data-college="5" aria-label="Подробнее: Московский городской педагогический университет">Подробнее</button>
                                     </div>
                                     <div class="college-card__info">
                                         <div>
@@ -310,11 +310,11 @@
                                             </div>
                                             <div class="college-card__bottom">
                                                 <div class="college-card__features" aria-label="Маркеры доступности">
-                                                    <span title="Для слабовидящих">◉</span>
-                                                    <span title="Для слабослышащих">◉</span>
-                                                    <span title="Для маломобильных">♿</span>
-                                                    <span title="Для студентов с РАС">◇</span>
-                                                    <span title="Сопровождение">✳</span>
+                                                    <span title="Для слабовидящих"><img alt="" src="assets/img/icon-eye.svg"></span>
+                                                    <span title="Для слабослышащих"><img alt="" src="assets/img/icon-ear.svg"></span>
+                                                    <span title="Для маломобильных"><img alt="" src="assets/img/icon-dis.svg"></span>
+                                                    <span title="Для студентов с РАС"><img alt="" src="assets/img/icon-pac.svg"></span>
+                                                    <span title="Сопровождение"><img alt="" src="assets/img/icon-p.svg"></span>
                                                 </div>
                                                 <div class="college-card__badges">
                                                     <span>БПОО</span>
@@ -329,7 +329,7 @@
                                         <div class="college-card__image-wrap">
                                             <img class="college-card__image" src="assets/img/college-6.webp" width="190" height="190" alt="Логотип: Колледж автоматизации и информационных технологий № 20" loading="lazy">
                                         </div>
-                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="6" aria-label="Подробнее: Колледж автоматизации и информационных технологий № 20">Подробнее</button>
+                                        <button class="button button--primary college-card__button" type="button" data-college="6" aria-label="Подробнее: Колледж автоматизации и информационных технологий № 20">Подробнее</button>
                                     </div>
                                     <div class="college-card__info">
                                         <div>
@@ -344,11 +344,11 @@
                                             </div>
                                             <div class="college-card__bottom">
                                                 <div class="college-card__features" aria-label="Маркеры доступности">
-                                                    <span title="Для слабовидящих">◉</span>
-                                                    <span title="Для слабослышащих">◉</span>
-                                                    <span title="Для маломобильных">♿</span>
-                                                    <span title="Для студентов с РАС">◇</span>
-                                                    <span title="Сопровождение">✳</span>
+                                                    <span title="Для слабовидящих"><img alt="" src="assets/img/icon-eye.svg"></span>
+                                                    <span title="Для слабослышащих"><img alt="" src="assets/img/icon-ear.svg"></span>
+                                                    <span title="Для маломобильных"><img alt="" src="assets/img/icon-dis.svg"></span>
+                                                    <span title="Для студентов с РАС"><img alt="" src="assets/img/icon-pac.svg"></span>
+                                                    <span title="Сопровождение"><img alt="" src="assets/img/icon-p.svg"></span>
                                                 </div>
                                                 <div class="college-card__badges">
                                                     <span>БПОО</span>
@@ -363,7 +363,7 @@
                                         <div class="college-card__image-wrap">
                                             <img class="college-card__image" src="assets/img/college-7.webp" width="190" height="190" alt="Логотип: Колледж архитектуры, дизайна и реинжиниринга № 26" loading="lazy">
                                         </div>
-                                        <button class="button button--primary college-card__button" type="button" data-bs-toggle="modal" data-bs-target="#college-modal" data-college="7" aria-label="Подробнее: Колледж архитектуры, дизайна и реинжиниринга № 26">Подробнее</button>
+                                        <button class="button button--primary college-card__button" type="button" data-college="7" aria-label="Подробнее: Колледж архитектуры, дизайна и реинжиниринга № 26">Подробнее</button>
                                     </div>
                                     <div class="college-card__info">
                                         <div>
@@ -378,11 +378,11 @@
                                             </div>
                                             <div class="college-card__bottom">
                                                 <div class="college-card__features" aria-label="Маркеры доступности">
-                                                    <span title="Для слабовидящих">◉</span>
-                                                    <span title="Для слабослышащих">◉</span>
-                                                    <span title="Для маломобильных">♿</span>
-                                                    <span title="Для студентов с РАС">◇</span>
-                                                    <span title="Сопровождение">✳</span>
+                                                    <span title="Для слабовидящих"><img alt="" src="assets/img/icon-eye.svg"></span>
+                                                    <span title="Для слабослышащих"><img alt="" src="assets/img/icon-ear.svg"></span>
+                                                    <span title="Для маломобильных"><img alt="" src="assets/img/icon-dis.svg"></span>
+                                                    <span title="Для студентов с РАС"><img alt="" src="assets/img/icon-pac.svg"></span>
+                                                    <span title="Сопровождение"><img alt="" src="assets/img/icon-p.svg"></span>
                                                 </div>
                                                 <div class="college-card__badges">
                                                     <span>БПОО</span>
@@ -403,51 +403,70 @@
                 </section>
             </div>
         </main>
-        <div class="modal fade college-modal" id="college-modal" tabindex="-1" aria-labelledby="college-modal-title" aria-hidden="true">
+        <div class="modal fade college-modal college-modal--example" id="example-college-modal" tabindex="-1" aria-labelledby="example-college-modal-title" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable college-modal__dialog">
                 <div class="modal-content college-modal__content">
                     <div class="modal-header college-modal__header">
-                        <p class="college-modal__eyebrow">Информация о колледже</p>
+                        <h2 class="college-modal__eyebrow">О колледже</h2>
+                        <nav class="college-modal__nav" aria-label="Разделы окна">
+                            <a href="#example-detail-admissions">Приём</a>
+                            <a href="#example-detail-gallery">Галерея</a>
+                        </nav>
                         <button class="college-modal__close" type="button" data-bs-dismiss="modal" aria-label="Закрыть окно">×</button>
                     </div>
                     <div class="modal-body college-modal__body">
-                        <section class="college-detail" aria-labelledby="college-modal-title">
+                        <section class="college-detail" aria-labelledby="example-college-modal-title">
                             <div class="college-detail__hero">
                                 <div class="college-detail__logo-wrap">
-                                    <img class="college-detail__logo" id="detail-logo" src="assets/img/detail-main.webp" width="263" height="246" alt="Логотип Московского образовательного комплекса имени Виктора Талалихина">
+                                    <img class="college-detail__logo" id="example-detail-logo" src="assets/img/detail-main.webp" width="263" height="246" alt="Логотип Московского образовательного комплекса имени Виктора Талалихина">
+                                    <div class="college-detail__actions">
+                                        <a class="button button--primary" href="#example-detail-admissions">Условия приёма</a>
+                                        <a class="button button--secondary" id="example-detail-question" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20о%20колледже">Задать вопрос о колледже</a>
+                                    </div>
                                 </div>
                                 <div class="college-detail__intro">
-                                    <h2 class="college-detail__title" id="college-modal-title">Московский образовательный комплекс имени Виктора Талалихина</h2>
-                                    <p class="college-detail__description" id="detail-description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
-                                    <div class="college-detail__badges" id="detail-badges">
-                                        <span>БПОО</span>
-                                        <span>РУМЦ</span>
+                                    <h2 class="college-detail__title" id="example-college-modal-title">Московский образовательный комплекс имени Виктора Талалихина</h2>
+                                    <p class="college-detail__description" id="example-detail-description">Подготовка специалистов в области технологий, дизайна и сервиса. Современное оборудование и практика на ведущих предприятиях.</p>
+                                    <div class="college-detail__markers">
+                                        <div class="college-detail__features">
+                                            <img src="assets/img/icon-eye.svg" width="48" height="48" alt="Для слабовидящих">
+                                            <img src="assets/img/icon-ear.svg" width="48" height="48" alt="Для слабослышащих">
+                                            <img src="assets/img/icon-dis.svg" width="48" height="48" alt="Для маломобильных">
+                                            <img src="assets/img/icon-pac.svg" width="48" height="48" alt="Для студентов с РАС">
+                                            <img src="assets/img/icon-p.svg" width="48" height="48" alt="Сопровождение">
+                                        </div>
+                                        <div class="college-detail__badges" id="example-detail-badges">
+                                            <span>БПОО</span>
+                                            <span>РУМЦ</span>
+                                        </div>
                                     </div>
-                                    <dl class="college-detail__contacts" id="detail-contacts">
+                                    <dl class="college-detail__contacts" id="example-detail-contacts">
                                         <div>
-                                            <dt>Телефон</dt>
+                                            <dt><svg viewBox="0 0 24 24" aria-label="Телефон" role="img"><path d="M7 3 4 5c-2 6 9 17 15 15l2-3-5-3-2 2-6-6 2-2Z"/></svg></dt>
                                             <dd>
                                                 <a href="tel:+74991634083">+7 (499) 163-40-83</a>
                                             </dd>
                                         </div>
                                         <div>
-                                            <dt>Адрес</dt>
+                                            <dt><svg viewBox="0 0 24 24" aria-label="Адрес" role="img"><path d="M12 21s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></dt>
                                             <dd>107143, г. Москва, Вербная улица, д. 7</dd>
                                         </div>
                                         <div>
-                                            <dt>Почта</dt>
+                                            <dt><svg viewBox="0 0 24 24" aria-label="Почта" role="img"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 6 8 7 8-7"/></svg></dt>
                                             <dd>
                                                 <a href="mailto:spo-20@edu.mos.ru">spo-20@edu.mos.ru</a>
                                             </dd>
                                         </div>
+                                        <div>
+                                            <dt><svg viewBox="0 0 24 24" aria-label="Сайт" role="img"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg></dt>
+                                            <dd><span role="link" aria-disabled="true" title="Адрес сайта пока не указан">Открыть сайт колледжа ↗</span></dd>
+                                        </div>
                                     </dl>
-                                    <div class="college-detail__actions">
-                                        <a class="button button--primary" id="detail-question" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20о%20колледже">Задать вопрос о колледже</a>
-                                    </div>
+
                                 </div>
                             </div>
-                            <section class="admissions" id="detail-admissions" aria-labelledby="admissions-title">
-                                <h3 id="admissions-title">Данные о приёме</h3>
+                            <section class="admissions" id="example-detail-admissions" aria-labelledby="example-admissions-title">
+                                <h3 id="example-admissions-title">Данные о приёме</h3>
                                 <p>В таблице показано наличие приёма по учебным годам: «Да» — приём указан, «Нет» — не указан. Разверните группу, чтобы увидеть направления.</p>
                                 <div class="admissions__scroll" role="region" aria-label="Данные о приёме по учебным годам" tabindex="0">
                                     <table class="admissions__table">
@@ -479,7 +498,7 @@
                                             </tr>
                                             <tr class="admissions__group">
                                                 <th scope="row">
-                                                    <button type="button" class="admissions__toggle" aria-expanded="true" aria-controls="program-12">Фотоника, приборостроение, оптические и биотехнические системы и технологии <small>12.00.00</small></button>
+                                                    <button type="button" class="admissions__toggle" aria-expanded="true" aria-controls="example-program-12">Фотоника, приборостроение, оптические и биотехнические системы и технологии <small>12.00.00</small></button>
                                                 </th>
                                                 <td>
                                                     <span class="admissions__no">Нет</span>
@@ -488,23 +507,23 @@
                                                     <span class="admissions__yes">Да</span>
                                                 </td>
                                             </tr>
-                                            <tr id="program-12" class="admissions__subrow">
+                                            <tr id="example-program-12" class="admissions__subrow">
                                                 <td colspan="3">
                                                     <div class="admissions__programs">
                                                         <div>
                                                             <span>Оптотехника <small>12.03.02</small></span>
-                                                            <span class="admissions__no">Нет</span>
                                                             <span class="admissions__yes">Да</span>
+                                                            <span class="admissions__no">Нет</span>
                                                         </div>
                                                         <div>
                                                             <span>Биотехнические системы и технологии <small>12.03.04</small></span>
-                                                            <span class="admissions__no">Нет</span>
                                                             <span class="admissions__yes">Да</span>
+                                                            <span class="admissions__no">Нет</span>
                                                         </div>
                                                         <div>
                                                             <span>Лазерная техника и лазерные технологии <small>12.03.05</small></span>
-                                                            <span class="admissions__no">Нет</span>
                                                             <span class="admissions__yes">Да</span>
+                                                            <span class="admissions__no">Нет</span>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -523,8 +542,8 @@
                                 </div>
                                 <p class="admissions__note">Сроки подачи заявления, требования и специальные условия обучения уточняйте в колледже. Данные по направлениям и учебным годам требуют подтверждения.</p>
                             </section>
-                            <section class="detail-gallery" id="detail-gallery" aria-labelledby="gallery-title">
-                                <h3 id="gallery-title">Галерея</h3>
+                            <section class="detail-gallery" id="example-detail-gallery" aria-labelledby="example-gallery-title">
+                                <h3 id="example-gallery-title">Галерея</h3>
                                 <div class="detail-gallery__grid">
                                     <img src="assets/img/detail-gallery-1.webp" width="411" height="245" alt="Фотография колледжа 1" loading="lazy">
                                     <img src="assets/img/detail-gallery-2.webp" width="411" height="245" alt="Фотография колледжа 2" loading="lazy">
@@ -534,21 +553,7 @@
                                     <img src="assets/img/detail-gallery-6.webp" width="411" height="245" alt="Фотография колледжа 6" loading="lazy">
                                 </div>
                             </section>
-                            <section class="detail-help" aria-labelledby="detail-help-title">
-                                <div>
-                                    <h3 id="detail-help-title">Не нашли ответ<br>на свой вопрос?</h3>
-                                    <p>Наши специалисты помогут вам разобраться и ответят на все вопросы.</p>
-                                    <a class="button button--primary" href="mailto:inclusion@edu.mos.ru?subject=Вопрос%20о%20колледже">Задать вопрос</a>
-                                </div>
-                                <img src="assets/img/detail-help.webp" width="337" height="225" alt="" loading="lazy">
-                                <div class="detail-help__contact">
-                                    <h4>Консультации</h4>
-                                    <strong>Ольга Олеговна Унгурян</strong>
-                                    <span>Начальник отдела региональных и федеральных образовательных проектов</span>
-                                    <a href="mailto:inclusion@edu.mos.ru">inclusion@edu.mos.ru</a>
-                                    <span>Вопросы о выборе колледжа, поступлении и условиях обучения</span>
-                                </div>
-                            </section>
+
                         </section>
                     </div>
                 </div>
@@ -559,20 +564,14 @@
                 <div class="site-footer__brand">
                     <a class="brand" href="index.html">Инклюзия</a>
                     <div class="site-footer__socials" aria-label="Социальные сети">
-                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Telegram">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="m21 3-5 18-6-6-5 3 1-7-4-3 19-5Zm-15 8L21 3 10 15"/>
-                            </svg>
+                        <a class="round-link" role="link" aria-disabled="true"  aria-label="Telegram">
+                            <img alt="" src="assets/img/Telegram.svg">
                         </a>
-                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="ВКонтакте">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M3 5c0 8 4 14 10 14v-5c3 0 5 3 6 5h3c-1-4-4-6-6-7 2-2 4-4 5-7h-4c-1 3-3 6-4 6V5H9v8C6 10 6 7 6 5Z"/>
-                            </svg>
+                        <a class="round-link" role="link" aria-disabled="true" aria-label="ВКонтакте">
+                            <img alt="" src="assets/img/VK.svg">
                         </a>
-                        <a class="round-link" role="link" aria-disabled="true" title="Ссылка готовится к публикации" aria-label="Мессенджер">
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M21 11a9 9 0 0 1-9 9 10 10 0 0 1-4-1l-5 2 1-5a9 9 0 1 1 17-5Z"/>
-                            </svg>
+                        <a class="round-link" role="link" aria-disabled="true"  aria-label="Макс">
+                            <img alt="" src="assets/img/Messenger.svg">
                         </a>
                     </div>
                     <a class="site-footer__privacy" role="link" aria-disabled="true" data-page="privacy.html">Политика обработки данных</a>
@@ -611,7 +610,7 @@
                     <p class="site-footer__caption">Общие контакты</p>
                     <a href="mailto:info@mgpu.ru">info@mgpu.ru</a>
                     <a href="tel:+74951981588">+7 (495) 198-15-88</a>
-                    <p>107143, г. Москва,<br>ул. Бакунинская, 55 с 4</p>
+                    <p>107143, г. Москва, ул. Бакунинская, 55 с 4</p>
                 </address>
             </div>
         </footer>

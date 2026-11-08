@@ -1187,6 +1187,17 @@ h1, h2, h3, p, dl {
         color: var(--color-brand-hover);
     }
 }
+
+.button-hide-images{
+    &::after{
+        content: "";
+        width: 22px;
+        height: 22px;
+        margin-left: 12px;
+        background-image: url('../img/icon-hide-images.svg');
+        z-index: 1;
+    }
+}
 .status-badge {
     display: inline-flex;
     .flex-center();
@@ -2365,6 +2376,13 @@ h1, h2, h3, p, dl {
         padding-inline:8px;
         text-align:center;
         font-size:14px;
+        &::after{
+            content: '';
+            background-image: url('../img/icon-arrow-color.svg');
+            width: 24px;
+            height: 24px;
+            margin-left: 12px;
+        }
     }
 }
 .colleges-hero {
@@ -2395,10 +2413,16 @@ h1, h2, h3, p, dl {
         line-height:28px;
     }
     &__actions {
-        display:flex;
-        flex-wrap:wrap;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
         gap:16px;
         margin-top:32px;
+        max-width: 288px;
+        > .button {
+            width: 100%;
+            min-width: 0;
+            overflow-wrap: anywhere;
+        }
     }
     &__image {
         width:100%;
@@ -2481,6 +2505,14 @@ h1, h2, h3, p, dl {
         padding:0;
         margin:0 0 24px;
         border:0;
+
+        &--status {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            legend {
+                grid-column: 1 / -1;
+            }
+        }
     }
     &__group legend {
         float:none;
@@ -2543,7 +2575,7 @@ h1, h2, h3, p, dl {
         place-items:center;
         width:40px;
         height:40px;
-        border-radius:12px;
+        border-radius: 50%;
         background:var(--color-soft);
         color:var(--color-brand);
         font-size:20px;
@@ -2607,6 +2639,14 @@ h1, h2, h3, p, dl {
     &__button {
         width:100%;
         padding-inline:16px;
+        background: #EFF4F3;
+        color: var(--color-brand);
+        border: 0;
+
+        &:hover {
+            background: white;
+            color: var(--color-brand-hover);
+        }
     }
     &__info {
         min-width:0;
@@ -2669,8 +2709,8 @@ h1, h2, h3, p, dl {
         min-width:70px;
         padding:8px 12px;
         border-radius:12px;
-        background:#dcefe8;
-        color:var(--color-brand);
+        background: #F9FBFD;
+        color:#1F5FB1;
         font-weight:600;
     }
 }
@@ -3136,12 +3176,6 @@ h1, h2, h3, p, dl {
             font-size:16px;
             line-height:25px;
         }
-        &__actions {
-            display:grid;
-        }
-        &__actions .button {
-            width:100%;
-        }
     }
     .page {
         &--colleges .section {
@@ -3268,5 +3302,90 @@ h1, h2, h3, p, dl {
         &__contact {
             grid-column:auto;
         }
+    }
+}
+
+/* Example details dialog for the first college. */
+.college-modal--example {
+    .college-modal {
+        &__content { background: white; }
+        &__header { padding: 30px 30px 16px; border: 0; gap: 12px; }
+        &__eyebrow { color: var(--color-text); font-size: 40px; line-height: 1.2; font-weight: 700; }
+        &__nav {
+            display: flex;
+            gap: 12px;
+            margin-left: auto;
+            a { padding: 12px 28px; border-radius: 12px; background: var(--color-soft); color: var(--color-brand); font-weight: 500; }
+        }
+        &__close { width: 48px; height: 48px; flex-shrink: 0; border-radius: 12px; }
+        &__body { padding: 0 30px 30px; scroll-behavior: smooth; }
+    }
+    .college-detail {
+        > section { padding: 0; margin: 32px 0 0; scroll-margin-top: 16px; }
+        &__hero { grid-template-columns: 296px minmax(0, 1fr); gap: 16px; padding: 0; min-height: 0; margin: 0; align-items: stretch; }
+        &__logo-wrap { width: auto; height: auto; padding: 24px 22px; display: flex; flex-direction: column; border: 1px solid #e6ecea; border-radius: 24px; }
+        &__logo { width: 100%; height: 230px; padding: 8px; object-fit: contain; margin-bottom: 24px; }
+        &__actions { display: grid; gap: 16px; width: 100%; margin-top: auto; }
+        &__actions .button { width: 100%; min-height: 52px; padding: 12px; font-size: 14px; border-radius: 24px; }
+        &__intro { min-width: 0; border: 1px solid #e6ecea; border-radius: 24px; padding: 16px 24px 24px; display: flex; flex-direction: column; }
+        &__title { font-size: 32px; line-height: 1.15; letter-spacing: -.6px; }
+        &__description { margin: 16px 0 48px; font-size: 18px; line-height: 27px; }
+        &__markers { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: auto; padding-bottom: 16px; border-bottom: 1px solid #e6ecea; }
+        &__features { display: flex; flex-wrap: wrap; gap: 8px; img { width: 48px; height: 48px; } }
+        &__badges { margin: 0; span { background: #f8fbff; color: #1F5FB1; } }
+        &__contacts { margin: 16px 0 0; grid-template-columns: 1fr 1fr; gap: 16px 32px; color: var(--color-brand); }
+        &__contacts > div:nth-child(2) { grid-column: 1; grid-row: 2; }
+        &__contacts > div { display: flex; align-items: center; gap: 16px; }
+        &__contacts dt {
+            display: grid; place-items: center; width: 48px; height: 48px; flex: 0 0 48px;
+            background: var(--color-soft); border-radius: 50%; margin: 0; color: var(--color-brand);
+            svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        }
+        &__contacts dd { font-size: 16px; font-weight: 500; }
+    }
+    .admissions {
+        &__scroll { border-color: #e6ecea; border-radius: 24px; padding: 8px 24px; }
+        &__table { min-width: 680px; table-layout: fixed; }
+        &__table thead { background: white; }
+        &__table th, &__table td { padding: 20px 0; border-color: #e6ecea; }
+        &__table thead th { font-size: 16px; }
+        &__table thead th:not(:first-child) { width: 18%; }
+        &__table tbody th { font-size: 18px; font-weight: 500; }
+        &__table small { display: block; font-size: 16px; color: var(--color-muted); font-weight: 600; margin-top: 4px; }
+        &__table tbody tr:last-child > * { border-bottom: 0; }
+        &__yes, &__no { background: #f8fbff; color: #1F5FB1; min-width: 52px; font-size: 16px; font-weight: 500; }
+        &__toggle { padding: 0 0 0 68px; font-size: 18px; line-height: 26px; font-weight: 500; min-height: 52px; }
+        &__toggle::before { content: ""; position: absolute; left: 0; top: 0; width: 52px; height: 52px; border-radius: 50%; background: var(--color-soft); }
+        &__toggle::after { content: ""; width: 9px; height: 9px; border-right: 2px solid var(--color-brand); border-bottom: 2px solid var(--color-brand); left: 21px; top: 19px; transform: rotate(45deg); }
+        &__toggle[aria-expanded="true"]::after { content: ""; transform: rotate(225deg); top: 23px; }
+        &__programs { padding-left: 68px; }
+        &__programs > div { grid-template-columns: minmax(0, 1fr) 18% 18%; gap: 0; padding: 16px 0; border-color: #e6ecea; align-items: center; }
+        &__programs .admissions__yes, &__programs .admissions__no { justify-self: center; }
+        &__note { color: var(--color-muted); }
+    }
+    .detail-gallery__grid { gap: 16px; }
+    @media (max-width: @tablet-max) {
+        .college-detail {
+            &__hero { grid-template-columns: 240px minmax(0, 1fr); }
+            &__title { font-size: 26px; }
+            &__contacts { grid-template-columns: 1fr; }
+            &__contacts > div:nth-child(2) { grid-row: auto; }
+        }
+    }
+    @media (max-width: @small-tablet-max) {
+        .college-modal {
+            &__header { padding: 20px 16px 16px; flex-wrap: wrap; }
+            &__eyebrow { font-size: 28px; margin-right: auto; }
+            &__nav { order: 3; width: 100%; margin: 0; a { flex: 1; text-align: center; } }
+            &__body { padding: 0 16px 20px; }
+        }
+        .college-detail {
+            &__hero { grid-template-columns: minmax(0, 1fr); }
+            &__logo { height: 200px; }
+            &__intro { padding: 20px; }
+            &__description { margin-bottom: 24px; font-size: 16px; }
+        }
+        .admissions__scroll { padding: 8px 16px; }
+        .detail-gallery__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
     }
 }

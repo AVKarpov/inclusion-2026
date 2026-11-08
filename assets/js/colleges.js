@@ -6,7 +6,7 @@
     const count = document.querySelector('#college-count');
     const empty = document.querySelector('#college-empty');
     const imageToggle = document.querySelector('#toggle-images');
-    const modal = document.querySelector('#college-modal');
+    const modal = document.querySelector('#example-college-modal');
     if (!form || !modal) return;
 
     const normalize = (value) => value.toLocaleLowerCase('ru').trim().replace(/ё/g, 'е');
@@ -43,16 +43,7 @@
         imageToggle.textContent = hidden ? 'Показать все изображения' : 'Убрать все изображения';
     });
 
-    modal.addEventListener('show.bs.modal', (event) => {
-        const trigger = event.relatedTarget;
-        const card = trigger?.closest('.college-card');
-        if (!card) return;
-        const name = card.querySelector('.college-card__name').textContent.trim();
-        const logo = card.querySelector('.college-card__image');
-        modal.querySelector('#college-modal-title').textContent = name;
-        modal.querySelector('#detail-logo').src = logo.src;
-        modal.querySelector('#detail-logo').alt = `Логотип: ${name}`;
-        modal.querySelector('#detail-question').href = `mailto:inclusion@edu.mos.ru?subject=${encodeURIComponent(`Вопрос о колледже: ${name}`)}`;
+    modal.addEventListener('show.bs.modal', () => {
         modal.querySelector('.college-modal__body').scrollTop = 0;
     });
 
