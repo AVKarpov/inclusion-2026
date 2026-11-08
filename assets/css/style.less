@@ -434,6 +434,17 @@ h1, h2, h3, p, dl {
         color: var(--color-muted);
     }
 }
+.button-question{
+    &::after{
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/trailing-arrow-icon.svg');
+        background-repeat: no-repeat;
+        margin-left: 12px;
+    }
+}
+
 .consultation {
     position: relative;
     display: grid;
